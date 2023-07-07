@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: Inter, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(245 245 247);
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 0 4px rgb(245 245 247);
+  background-color: rgb(209 213 219);
+  border-radius: 9999px;
+}

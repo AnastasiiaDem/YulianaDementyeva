@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "src": "./assets/images/canessa.png",
+      "name": "Canessa",
+      "text": "Canessa"
+    },
+    {
+      "src": "./assets/images/clazzy.png",
+      "name": "Clazzy",
+      "text": "Clazzy"
+    },
+    {
+      "src": "./assets/images/cendre.png",
+      "name": "Cendre",
+      "text": "Cendre"
+    },
+    {
+      "src": "./assets/images/spazio.png",
+      "name": "Spazio",
+      "text": "Spazio"
+    },
+    {
+      "src": "./assets/images/nerolli.png",
+      "name": "Nerolli",
+      "text": "Nerolli"
+    },
+    {
+      "src": "./assets/images/buro.png",
+      "name": "Buro",
+      "text": "Buro"
+    }
+  ]
+}
