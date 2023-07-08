@@ -2,12 +2,12 @@
   <img class="cover-img" style="object-position: 0 0;" src="./assets/images/header-1200x866.jpg" alt="">
   <p class="name" [style.position]="showName ? 'fixed' : 'absolute'">YULIANA DEMENTYEVA</p>
   <div class="nav">
-    <p><span class="arrow">&larr;</span> POLAROID</p>
-    <p><span class="arrow">&larr;</span> RUNWAY</p>
-    <p><span class="arrow">&larr;</span> BOOK</p>
+    <a href="#polaroid"><span class="arrow">&larr;</span> POLAROID</a>
+    <a href="#runway"><span class="arrow">&larr;</span> RUNWAY</a>
+    <a href="#book"><span class="arrow">&larr;</span> BOOK</a>
   </div>
   <div class="shadow"></div>
-  <p class="contact">CONTACT <span class="arrow">&rarr;</span></p>
+  <a class="contact" href="#contact">CONTACT <span class="arrow">&rarr;</span></a>
 </div>
 <div class="container">
   <img class="cover-img" src="./assets/images/yulianadementyeva_323594152_1221637168761125_1841072689572010128_n.jpg"
@@ -43,32 +43,17 @@
     </div>
   </div>
 </div>
-<div class="container" id="book">
-  <div *ngFor="let item of items; index as i;">
-    <img [src]="item.src" [alt]="item.name" [style.width]="i%2 ? 220 : (i%3 ? 180 : 200)">
+<div id="book">
+  <div *ngFor="let item of items; index as i;" style="overflow: hidden;">
+    <img [src]="item.src" [alt]="item.name" [ngStyle]="{'width': i%2 == 0 ? '320px' : (i%3 == 0 ? '280px' : '300px')}">
   </div>
 </div>
-<div class="container" id="runway">
+<div id="runway">
 
 </div>
-<div class="container" id="polaroid">
+<div id="polaroid">
 
 </div>
+<div id="contact">
 
-<!--<img src="./assets/images/canessa.png" alt="">-->
-<!--<img src="./assets/images/clazzy.png" alt="">-->
-<!--<img src="./assets/images/cendre.png" alt="">-->
-<!--<img src="./assets/images/spazio.png" alt="">-->
-<!--<img src="./assets/images/nerolli.png" alt="">-->
-<!--<img src="./assets/images/buro.png" alt="">-->
-<!--<img src="./assets/images/bicholla.png" alt="">-->
-<!--<img src="./assets/images/moonaya.png" alt="">-->
-<!--<img src="./assets/images/byzoom.png" alt="">-->
-<!--<img src="./assets/images/bodygoals.png" alt="">-->
-<!--<img src="./assets/images/garcia.png" alt="">-->
-<!--<img src="./assets/images/pitaya.png" alt="">-->
-<!--<img src="./assets/images/1.png" alt="">-->
-<!--<img src="./assets/images/vogue.png" alt="">-->
-<!--<img src="./assets/images/kulikov.png" alt="">-->
-<!--<img src="./assets/images/wedding.png" alt="">-->
-<!--<img src="./assets/images/2.png" alt="">-->
+</div>

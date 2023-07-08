@@ -13,12 +13,13 @@ export class AppComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
+    let parameters = (document.querySelector('.parameters') as HTMLElement).clientHeight;
     let book = (document.querySelector('#book') as HTMLElement).clientHeight;
     let runway = (document.querySelector('#runway') as HTMLElement).clientHeight;
     let polaroid = (document.querySelector('#polaroid') as HTMLElement).clientHeight;
     let name = document.querySelector('.name') as HTMLElement;
-
-    this.showName = window.pageYOffset < runway;
+    console.log(window.innerWidth);
+    this.showName = window.pageYOffset < parameters + window.innerWidth - 430;
   }
 
   ngOnInit(): void {

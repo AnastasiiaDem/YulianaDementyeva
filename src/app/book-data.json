@@ -1,19 +1,9 @@
 {
   "data": [
     {
-      "src": "./assets/images/canessa.png",
-      "name": "Canessa",
-      "text": "Canessa"
-    },
-    {
       "src": "./assets/images/clazzy.png",
       "name": "Clazzy",
       "text": "Clazzy"
-    },
-    {
-      "src": "./assets/images/cendre.png",
-      "name": "Cendre",
-      "text": "Cendre"
     },
     {
       "src": "./assets/images/spazio.png",
@@ -21,14 +11,194 @@
       "text": "Spazio"
     },
     {
+      "src": "./assets/images/moonaya.png",
+      "name": "Moonaya",
+      "text": "Moonaya"
+    },
+    {
+      "src": "./assets/images/cendre.png",
+      "name": "Cendre",
+      "text": "Cendre"
+    },
+    {
       "src": "./assets/images/nerolli.png",
       "name": "Nerolli",
       "text": "Nerolli"
     },
     {
+      "src": "./assets/images/byzoom.png",
+      "name": "Byzoom",
+      "text": "Byzoom"
+    },
+    {
+      "src": "./assets/images/red.jpeg",
+      "name": "Red",
+      "text": "Red"
+    },
+    {
+      "src": "./assets/images/garcia.jpg",
+      "name": "Garcia",
+      "text": "Garcia"
+    },
+    {
+      "src": "./assets/images/canessa.png",
+      "name": "Canessa",
+      "text": "Canessa"
+    },
+    {
       "src": "./assets/images/buro.png",
       "name": "Buro",
       "text": "Buro"
+    },
+    {
+      "src": "./assets/images/box.png",
+      "name": "Box",
+      "text": "Box"
+    },
+    {
+      "src": "./assets/images/vogue.png",
+      "name": "Vogue",
+      "text": "Vogue"
+    },
+    {
+      "src": "./assets/images/vogue%204.jpg",
+      "name": "Vogue",
+      "text": "Vogue"
+    },
+    {
+      "src": "./assets/images/vogue%202.png",
+      "name": "Vogue",
+      "text": "Vogue"
+    },
+    {
+      "src": "./assets/images/kulikov.png",
+      "name": "Kulikov",
+      "text": "Kulikov"
+    },
+    {
+      "src": "./assets/images/wedding.png",
+      "name": "Wedding",
+      "text": "Wedding"
+    },
+    {
+      "src": "./assets/images/pitaya.png",
+      "name": "Pitaya",
+      "text": "Pitaya"
+    },
+    {
+      "src": "./assets/images/bodygoals.png",
+      "name": "Bodygoals",
+      "text": "Bodygoals"
+    },
+    {
+      "src": "./assets/images/harpers-bazaar%203.png",
+      "name": "Harpers Bazaar",
+      "text": "Harpers Bazaar"
+    },
+    {
+      "src": "./assets/images/bicholla-campaign.png",
+      "name": "Bicholla",
+      "text": "Bicholla"
+    },
+    {
+      "src": "./assets/images/bicholla.png",
+      "name": "Bicholla",
+      "text": "Bicholla"
+    },
+    {
+      "src": "./assets/images/1.png",
+      "name": "1",
+      "text": "1"
+    },
+    {
+      "src": "./assets/images/elle-ukraine.png",
+      "name": "Elle",
+      "text": "Elle"
+    },
+    {
+      "src": "./assets/images/givenchy.png",
+      "name": "Givenchy",
+      "text": "Givenchy"
+    },
+    {
+      "src": "./assets/images/amish.png",
+      "name": "Amish",
+      "text": "Amish"
+    },
+    {
+      "src": "./assets/images/vogue%203.png",
+      "name": "Vogue",
+      "text": "Vogue"
+    },
+    {
+      "src": "./assets/images/tush.png",
+      "name": "Tush",
+      "text": "Tush"
+    },
+    {
+      "src": "./assets/images/amica.png",
+      "name": "Amica",
+      "text": "Amica"
+    },
+    {
+      "src": "./assets/images/2.png",
+      "name": "2",
+      "text": "2"
+    },
+    {
+      "src": "./assets/images/so-figaro.png",
+      "name": "So Figaro",
+      "text": "So Figaro"
+    },
+    {
+      "src": "./assets/images/scmp.png",
+      "name": "SCMP",
+      "text": "SCMP"
+    },
+    {
+      "src": "./assets/images/vogue%205.png",
+      "name": "Vogue",
+      "text": "Vogue"
+    },
+    {
+      "src": "./assets/images/elle%202.png",
+      "name": "Elle",
+      "text": "Elle"
+    },
+    {
+      "src": "./assets/images/elle.png",
+      "name": "Elle",
+      "text": "Elle"
+    },
+    {
+      "src": "./assets/images/grazia-2.png",
+      "name": "Grazia",
+      "text": "Grazia"
+    },
+    {
+      "src": "./assets/images/grazia.jpeg",
+      "name": "Grazia",
+      "text": "Grazia"
+    },
+    {
+      "src": "./assets/images/figaro.png",
+      "name": "Figaro",
+      "text": "Figaro"
+    },
+    {
+      "src": "./assets/images/monde.png",
+      "name": "Monde",
+      "text": "Monde"
+    },
+    {
+      "src": "./assets/images/harpers-bazaar-4.jpg",
+      "name": "Harpers Bazaar",
+      "text": "Harpers Bazaar"
+    },
+    {
+      "src": "./assets/images/cosmopolitan.png",
+      "name": "Cosmopolitan",
+      "text": "Cosmopolitan"
     }
   ]
 }

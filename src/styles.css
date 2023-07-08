@@ -12,6 +12,10 @@ p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   overflow-x: hidden;
 }
