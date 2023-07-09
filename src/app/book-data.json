@@ -71,9 +71,9 @@
       "text": "Vogue"
     },
     {
-      "src": "./assets/images/kulikov.png",
-      "name": "Kulikov",
-      "text": "Kulikov"
+      "src": "./assets/images/bodygoals.png",
+      "name": "Bodygoals",
+      "text": "Bodygoals"
     },
     {
       "src": "./assets/images/wedding.png",
@@ -81,19 +81,19 @@
       "text": "Wedding"
     },
     {
+      "src": "./assets/images/kulikov.png",
+      "name": "Kulikov",
+      "text": "Kulikov"
+    },
+    {
       "src": "./assets/images/pitaya.png",
       "name": "Pitaya",
       "text": "Pitaya"
     },
     {
-      "src": "./assets/images/bodygoals.png",
-      "name": "Bodygoals",
-      "text": "Bodygoals"
-    },
-    {
-      "src": "./assets/images/harpers-bazaar%203.png",
-      "name": "Harpers Bazaar",
-      "text": "Harpers Bazaar"
+      "src": "./assets/images/1.jpg",
+      "name": "1",
+      "text": "1"
     },
     {
       "src": "./assets/images/bicholla-campaign.png",
@@ -106,9 +106,9 @@
       "text": "Bicholla"
     },
     {
-      "src": "./assets/images/1.png",
-      "name": "1",
-      "text": "1"
+      "src": "./assets/images/harpers-bazaar%203.png",
+      "name": "Harpers Bazaar",
+      "text": "Harpers Bazaar"
     },
     {
       "src": "./assets/images/elle-ukraine.png",

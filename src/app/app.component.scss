@@ -7,6 +7,11 @@
 #book, #runway, #polaroid {
   width: 100vw;
   position: relative;
+  padding: 20px 0;
+}
+
+#runway, #polaroid {
+  padding: 100px 0;
 }
 
 .cover-img {
@@ -92,24 +97,122 @@
   font-weight: 300;
 }
 
-#book {
+.book-container {
   display: flex;
   gap: 20px;
   justify-content: center;
-  margin-top: 20px;
+  padding-bottom: 80px;
   flex-flow: wrap;
+  transition: 0.5s all ease-in-out;
 
-    img {
-      height: max-content;
-      transition: 0.5s all ease-in-out;
+  img {
+    height: max-content;
+    transition: 0.5s all ease-in-out;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 
-      &:hover {
-        transform: scale(1.2);
-        opacity: 0.5;
-      }
+    &:hover {
+      transform: scale(1.2);
+      opacity: 0.5;
     }
+  }
 
-    .shade-block {
-      position: absolute;
-    }
+  .shade-block {
+    position: absolute;
+  }
+}
+
+.slider-container {
+  position: relative;
+  height: 400px;
+  overflow-x: auto;
+}
+
+.slider-width {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  top: 0;
+  left: 0;
+  transition: all 1s;
+
+  img {
+    height: 400px;
+  }
+
+}
+
+button {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.prev {
+  transform: rotate(90deg) translate(-50%, 0);
+}
+
+.next {
+  transform: rotate(-90deg) translate(50%, 0);
+  right: 0;
+}
+
+.more {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  width: max-content;
+  margin: 0 auto;
+}
+
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.download {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: lowercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  img {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+  }
+}
+
+.polaroid {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 30px;
+
+  .block {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  img {
+    object-fit: contain;
+  }
 }

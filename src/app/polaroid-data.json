@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "src": "./assets/images/polaroid_1.png"
+    },
+    {
+      "src": "./assets/images/polaroid_2.png"
+    },
+    {
+      "src": "./assets/images/polaroid_3.png"
+    },
+    {
+      "src": "./assets/images/polaroid_4.png"
+    },
+    {
+      "src": "./assets/images/polaroid_5.png"
+    },
+    {
+      "src": "./assets/images/polaroid_6.png"
+    }
+  ]
+}

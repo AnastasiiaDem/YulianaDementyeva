@@ -44,15 +44,57 @@
   </div>
 </div>
 <div id="book">
-  <div *ngFor="let item of items; index as i;" style="overflow: hidden;">
-    <img [src]="item.src" [alt]="item.name" [ngStyle]="{'width': i%2 == 0 ? '320px' : (i%3 == 0 ? '280px' : '300px')}">
+  <div class="book-container">
+    <div *ngFor="let item of bookItems; index as i;" style="overflow: hidden;">
+      <img [src]="item.src" [alt]="item.name"
+           [ngStyle]="{'width': i%2 == 0 ? '320px' : (i%3 == 0 ? '280px' : '300px')}">
+    </div>
   </div>
+  <p class="more" (click)="bookItems.length !== allBookItems.length ? loadMore() : showLess()"
+     [style.text-decoration]="bookItems.length !== allBookItems.length ? 'overline' : 'underline'">
+    {{bookItems.length !== allBookItems.length ? 'more' : 'less'}}
+  </p>
 </div>
 <div id="runway">
+  <!--  <div *ngFor="let item of runwayItems; index as i;" class="image-container">-->
+  <!--      <img [src]="'./assets/images/yuliana_dementyeva_show_' + (i + 1) + '.png'" alt="">-->
+  <!--  </div>-->
 
+  <!--  <button type="button" class="prev" onclick="prev()">Prev</button>-->
+  <!--  <button type="button" class="next" onclick="next()">Next</button>-->
+
+  <div class="slider-container">
+    <div class="slider-width">
+      <ng-container *ngFor="let item of runwayItems; index as i;">
+        <img [src]="item.src" alt="" class="item">
+      </ng-container>
+    </div>
+  </div>
+  <!--  <button type="button" class="prev" (click)="prev()">-->
+  <!--    <img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/expand-arrow&#45;&#45;v2.png" alt="expand-arrow&#45;&#45;v2">-->
+  <!--  </button>-->
+  <!--  <button type="button" class="next" (click)="next()">-->
+  <!--    <img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/expand-arrow&#45;&#45;v2.png" alt="expand-arrow&#45;&#45;v2">-->
+  <!--  </button>-->
 </div>
 <div id="polaroid">
-
+  <p class="name" style="margin: 0 auto 40px;">YULIANA DEMENTYEVA</p>
+  <a class="download" href="./assets/images/polaroid.pdf" target="_blank">download<img src="./assets/images/install.png" alt=""></a>
+  <!--  <img src="./assets/images/polaroid.png" alt="" style="">-->
+  <div class="polaroid">
+    <div class="block">
+      <img src="./assets/images/polaroid_1.png" alt="" style="">
+      <img src="./assets/images/polaroid_4.png" alt="" style="">
+    </div>
+    <div class="block">
+      <img src="./assets/images/polaroid_2.png" alt="" style="">
+      <img src="./assets/images/polaroid_5.png" alt="" style="">
+    </div>
+    <div class="block">
+      <img src="./assets/images/polaroid_3.png" alt="" style="">
+      <img src="./assets/images/polaroid_6.png" alt="" style="">
+    </div>
+  </div>
 </div>
 <div id="contact">
 
