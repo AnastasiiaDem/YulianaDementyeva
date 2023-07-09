@@ -25,12 +25,14 @@ export class AppComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     let parameters = (document.querySelector('.parameters') as HTMLElement).clientHeight;
+    let parameters2 = (document.querySelector('#parameters2') as HTMLElement).clientHeight;
     let book = (document.querySelector('#book') as HTMLElement).clientHeight;
     let runway = (document.querySelector('#runway') as HTMLElement).clientHeight;
     let polaroid = (document.querySelector('#polaroid') as HTMLElement).clientHeight;
+    let video = (document.querySelector('#video') as HTMLElement).clientHeight;
     let name = document.querySelector('.name') as HTMLElement;
 
-    this.showName = window.pageYOffset < parameters + window.innerWidth - 430;
+    this.showName = window.pageYOffset < parameters + window.innerWidth - 430 || window.pageYOffset > parameters2 + book + runway + polaroid + video + 430;
   }
 
   constructor() {
@@ -68,7 +70,7 @@ export class AppComponent implements OnInit {
   next() {
     // if (this.inc <= 10) {
     //   this.inc++;
-      this.count = this.count - 540;
+    this.count = this.count - 540;
     // }
 
     this.slider.style.left = this.count + 'px';
@@ -77,10 +79,10 @@ export class AppComponent implements OnInit {
   prev() {
     // if (this.inc !== 0) {
     //   this.inc--;
-      this.count = this.count + 540;
+    this.count = this.count + 540;
     // }
 
-      this.slider.style.left = this.count + 'px';
+    this.slider.style.left = this.count + 'px';
   }
 
   loadMore() {
