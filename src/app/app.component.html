@@ -1,3 +1,11 @@
+<!--<ng-container *ngIf="showSpinner">-->
+<!--  <div style="height: 100vh;overflow: hidden;">-->
+<!--    <img class="cover-img" style="object-position: 0 0;" src="./assets/images/header-1200x866.jpg" alt="">-->
+<!--  </div>-->
+<!--</ng-container>-->
+<!--<p [ngClass]="transition ? 'transition-preview-name' : 'preview-name'">YULIANA DEMENTYEVA</p>-->
+
+<!--<ng-container *ngIf="!showSpinner">-->
 <div class="container">
   <img class="cover-img" style="object-position: 0 0;" src="./assets/images/header-1200x866.jpg" alt="">
   <p class="name" [style.position]="showName ? 'fixed' : 'absolute'">YULIANA DEMENTYEVA</p>
@@ -45,9 +53,10 @@
 </div>
 <div id="book">
   <div class="book-container">
-    <div *ngFor="let item of bookItems; index as i;" style="overflow: hidden;">
-      <img [src]="item.src" [alt]="item.name"
-           [ngStyle]="{'width': i%2 == 0 ? '320px' : (i%3 == 0 ? '280px' : '300px')}">
+    <div *ngFor="let item of bookItems; index as i;" class="img-block"
+         [ngStyle]="{'margin-top': calcMargin(i)}">
+      <!--        <img [src]="item.src" [alt]="item.name">-->
+      <img [src]="item.src" [alt]="item.name" class="book-image">
     </div>
   </div>
   <p class="more" (click)="bookItems.length !== allBookItems.length ? loadMore() : showLess()"
@@ -79,8 +88,9 @@
 </div>
 <div id="polaroid">
   <p class="name" style="margin: 0 auto 40px;">YULIANA DEMENTYEVA</p>
-  <a class="download" href="./assets/images/polaroid.pdf" target="_blank">download<img src="./assets/images/install.png"
-                                                                                       alt=""></a>
+  <a class="download" href="./assets/images/polaroid.pdf" target="_blank">download<img
+    src="./assets/images/install.png"
+    alt=""></a>
   <!--  <img src="./assets/images/polaroid.png" alt="" style="">-->
   <div class="polaroid">
     <div class="block">
@@ -103,7 +113,7 @@
     <img src="./assets/images/sport.gif" alt="" height="208" width="340">
     <img src="./assets/images/liu.gif" alt="" height="620" width="400">
   </div>
-  <img src="./assets/images/fly.gif" alt="" height="394" width="860" style="position: absolute;top: 345px;">
+  <img src="./assets/images/fly.gif" alt="" height="394" width="860" style="position: absolute;top: 225px;">
   <div class="block2">
     <img src="./assets/images/anywell.gif" alt="" height="360" width="640">
     <img src="./assets/images/boxing.gif" alt="" height="360" width="620">
@@ -156,9 +166,12 @@
     <a href="https://www.instagram.com/mc2telaviv" target="_blank">@mc2telaviv</a>
   </p>
   <p class="social">
-    <a href="https://www.instagram.com/yulianadementyeva" target="_blank"><img src="./assets/images/Instagram.png" alt=""></a>
-    <a href="https://www.facebook.com/YulianaDementyeva" target="_blank"><img src="./assets/images/Facebook.png" alt=""></a>
-    <a href="https://www.youtube.com/channel/UCcHBVkyZ_v4blS76X7bRSfg" target="_blank"><img src="./assets/images/YouTube.png" alt=""></a>
+    <a href="https://www.instagram.com/yulianadementyeva" target="_blank"><img src="./assets/images/Instagram.png"
+                                                                               alt=""></a>
+    <a href="https://www.facebook.com/YulianaDementyeva" target="_blank"><img src="./assets/images/Facebook.png"
+                                                                              alt=""></a>
+    <a href="https://www.youtube.com/channel/UCcHBVkyZ_v4blS76X7bRSfg" target="_blank"><img
+      src="./assets/images/YouTube.png" alt=""></a>
     <a href="https://t.me/yulianadementyeva" target="_blank"><img src="./assets/images/Telegram.png" alt=""></a>
   </p>
 </div>
@@ -169,3 +182,4 @@
     <span>developed by Anastasiia Dementyeva</span>
   </p>
 </footer>
+<!--</ng-container>-->

@@ -7,11 +7,29 @@
 #book, #runway, #polaroid, #video {
   width: 100vw;
   position: relative;
+}
+
+#book, #polaroid {
   padding-top: 20px;
 }
 
-#runway, #polaroid, #contact, #video, #parameters2 {
-  padding-top: 100px;
+#runway {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#runway, #polaroid, #contact {
+  margin-top: 50px;
+}
+
+#video {
+  margin-top: 200px;
+}
+
+#parameters2 {
+  margin-top: 20px;
 }
 
 .cover-img {
@@ -74,6 +92,35 @@
   z-index: 2;
 }
 
+.preview-name {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  font-family: 'Cinzel Decorative', sans-serif;
+  font-size: 100px;
+  font-weight: 900;
+  width: 796px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  transition: 2s ease-in-out;
+}
+
+.transition-preview-name {
+  position: absolute;
+  text-align: center;
+  color: #000;
+  font-family: 'Cinzel Decorative', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  width: 174px;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  transition: 2s ease-in-out;
+}
+
 .parameters {
   position: absolute;
   left: 15%;
@@ -100,17 +147,18 @@
 .book-container {
   display: flex;
   gap: 20px;
-  justify-content: center;
+  justify-content: flex-start;
   padding-bottom: 80px;
   flex-flow: wrap;
   transition: 0.5s all ease-in-out;
 
   img {
-    height: max-content;
     transition: 0.5s all ease-in-out;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    min-width: 100%;
+    min-height: 100%;
 
     &:hover {
       transform: scale(1.2);
@@ -118,14 +166,38 @@
     }
   }
 
-  img:nth-child(even) {
-    width: 300px;
-    height: 420px;
-  }
-
   .shade-block {
     position: absolute;
   }
+
+  .img-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .img-block:nth-child(odd) {
+    width: 290px;
+    height: 400px;
+  }
+
+  .img-block:nth-child(even) {
+    width: 320px;
+    height: 450px;
+  }
+
+  //.img-block:nth-child(2n - 1) {
+  //  margin-top: -50px;
+  //}
+
+  //.img-block:first-child {
+  //  margin-top: 0;
+  //}
+  //
+  //.img-block:nth-child(3) {
+  //  margin-top: 0;
+  //}
 }
 
 .slider-container {
@@ -247,6 +319,10 @@ button {
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+
+  img {
+    height: 20px;
+  }
 }
 
 footer {

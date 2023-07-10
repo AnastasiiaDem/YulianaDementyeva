@@ -21,30 +21,45 @@ export class AppComponent implements OnInit {
   slider: any;
   allBookItems: any = [];
   more = 0;
+  showSpinner = true;
+  transition = false;
+  body: any;
+  line = 1;
+  images: any;
+  showNum = 15;
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
-    let parameters = (document.querySelector('.parameters') as HTMLElement).clientHeight;
-    let parameters2 = (document.querySelector('#parameters2') as HTMLElement).clientHeight;
-    let book = (document.querySelector('#book') as HTMLElement).clientHeight;
-    let runway = (document.querySelector('#runway') as HTMLElement).clientHeight;
-    let polaroid = (document.querySelector('#polaroid') as HTMLElement).clientHeight;
-    let video = (document.querySelector('#video') as HTMLElement).clientHeight;
+    let parameters = (document.querySelector('.parameters') as HTMLElement)?.clientHeight;
+    let parameters2 = (document.querySelector('#parameters2') as HTMLElement)?.clientHeight;
+    let book = (document.querySelector('#book') as HTMLElement)?.clientHeight;
+    let runway = (document.querySelector('#runway') as HTMLElement)?.clientHeight;
+    let polaroid = (document.querySelector('#polaroid') as HTMLElement)?.clientHeight;
+    let video = (document.querySelector('#video') as HTMLElement)?.clientHeight;
     let name = document.querySelector('.name') as HTMLElement;
 
-    this.showName = window.pageYOffset < parameters + window.innerWidth - 430 || window.pageYOffset > parameters2 + book + runway + polaroid + video + 430;
+    this.showName = window.pageYOffset < parameters + window.innerWidth - 430 || window.pageYOffset > parameters2 + book + runway + polaroid + video + 550;
   }
 
   constructor() {
-    this.runwayItems = runwayData.data;
-    this.allBookItems = bookData.data;
-    this.polaroidItems = polaroidData.data;
+    // setTimeout(() => {
+    //   this.transition = true;
+    //   this.body = document.querySelector('body') as HTMLElement;
+    //   this.body.style.overflow = 'hidden';
+      this.runwayItems = runwayData.data;
+      this.allBookItems = bookData.data;
+      this.polaroidItems = polaroidData.data;
+      this.bookItems = this.allBookItems.slice(0, this.showNum);
+    //   this.showSpinner = false;
+    // }, 1000);
   }
 
   ngOnInit(): void {
-
     this.slider = document.getElementsByClassName('slider-width')[0];
-    this.bookItems = this.allBookItems.slice(0, 18);
+
+    // setTimeout(() => {
+    //   this.body.style.overflow = 'auto';
+    // }, 3000);
 
     // if (screen.width > 990) {
     //   this.itemDisplay = 4;
@@ -86,15 +101,30 @@ export class AppComponent implements OnInit {
   }
 
   loadMore() {
-    this.more += 11;
-    this.bookItems = this.allBookItems.slice(0, 18 + this.more);
+    this.more += 14;
+    this.bookItems = this.allBookItems.slice(0, this.showNum + this.more);
+    setTimeout(() => {
+      this.images = document.querySelectorAll('.book-image');
+      this.images.forEach((e: any) => {
+        if (e.getAttribute('src') == '') {
+          e.parentElement.style.height = 0;
+        }
+      });
+    }, 0);
   }
 
   showLess() {
     this.more = 0;
-    this.bookItems = this.allBookItems.slice(0, 18);
+    this.bookItems = this.allBookItems.slice(0, this.showNum);
 
     let book = document.getElementById('book');
     book?.scrollIntoView();
+  }
+
+  calcMargin(i: number) {
+    if (i%4 == 0) {
+      this.line = i / 4;
+    }
+    return (i > 3) && (i%2 == 0) ? ('-' + (this.line * 50) + 'px') : '0';
   }
 }
