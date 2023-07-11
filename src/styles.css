@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  transition: all 0.5s ease-in-out;
 }
 
 p {
@@ -34,4 +35,19 @@ body {
   box-shadow: inset 0 0 0 4px rgb(245 245 247);
   background-color: rgb(209 213 219);
   border-radius: 9999px;
+}
+
+img {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
