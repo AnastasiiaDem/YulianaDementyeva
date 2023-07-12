@@ -1,0 +1,14 @@
+<img *ngIf="title == 'Byzoom'" style="width: 100vw;height: 100vh;display: block;"
+     src="https://drive.google.com/uc?id=1BlaUPfD22cQ2hLsUCgpiNHPGd7WpRVUd" alt="">
+<div class="block1">
+  <p class="title">{{displayData.text}}</p>
+  <img [src]="displayData.main" alt="">
+</div>
+<div class="block2">
+  <ng-container *ngFor="let item of grid">
+    <img [src]="item.src" alt="" [width]="item.width" [height]="item.height">
+  </ng-container>
+</div>
+
+<ngx-spinner bdColor="rgb(255,255,255)" size="default" color="rgba(0,0,0,0.5)" type="ball-fussion"
+             [fullScreen]="true"></ngx-spinner>
