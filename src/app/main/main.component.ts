@@ -1,4 +1,4 @@
-import {AfterContentChecked, AfterViewInit, Component, HostListener, OnInit} from '@angular/core';
+import {AfterViewInit, Component, HostListener, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import runwayData from '../runway-data.json';
 import bookData from '../book-data.json';
@@ -26,6 +26,9 @@ export class MainComponent implements OnInit, AfterViewInit {
   line = 1;
   images: any;
   showNum = 15;
+  step = 0;
+  plus = false;
+  minus = false;
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
@@ -35,7 +38,6 @@ export class MainComponent implements OnInit, AfterViewInit {
     let runway = (document.querySelector('#runway') as HTMLElement)?.clientHeight;
     let polaroid = (document.querySelector('#polaroid') as HTMLElement)?.clientHeight;
     let video = (document.querySelector('#video') as HTMLElement)?.clientHeight;
-    let name = document.querySelector('.name') as HTMLElement;
 
     this.showName = window.pageYOffset < parameters + window.innerWidth - 430 || window.pageYOffset > parameters2 + book + runway + polaroid + video + 550;
   }
@@ -58,6 +60,17 @@ export class MainComponent implements OnInit, AfterViewInit {
     this.spinner.show();
     this.slider = document.getElementsByClassName('slider-width')[0];
 
+    if (window.innerWidth <= 480) {
+      this.step = 11;
+    } else if (window.innerWidth > 480 && window.innerWidth <= 768) {
+      this.step = 7;
+    } else if (window.innerWidth > 768 && window.innerWidth <= 1024) {
+      this.step = 5;
+    } else {
+      this.step = 4;
+      this.plus = true;
+      this.minus = true;
+    }
     // setTimeout(() => {
     //   this.body.style.overflow = 'auto';
     // }, 3000);
@@ -91,19 +104,29 @@ export class MainComponent implements OnInit, AfterViewInit {
   }
 
   next() {
-    // if (this.inc <= 10) {
-    //   this.inc++;
-    this.count = this.count - 540;
-    // }
+   if (this.inc < this.step) {
+      this.inc++;
+      this.count = this.count - window.innerWidth - 10;
+    }
+
+    if (this.plus && this.inc == 4) {
+      this.count = this.count + (window.innerWidth + 10) + ((window.innerWidth - 40) / 5) * (-4) - 40;
+      this.plus = false;
+    }
 
     this.slider.style.left = this.count + 'px';
   }
 
   prev() {
-    // if (this.inc !== 0) {
-    //   this.inc--;
-    this.count = this.count + 540;
-    // }
+    if (this.inc > 0) {
+      this.inc--;
+      this.count = this.count + window.innerWidth + 10;
+    }
+
+    if (this.minus && this.inc == 0) {
+      this.count = this.count - 10 - ((window.innerWidth - 40) / 5);
+      this.minus = false;
+    }
 
     this.slider.style.left = this.count + 'px';
   }
@@ -130,14 +153,14 @@ export class MainComponent implements OnInit, AfterViewInit {
   }
 
   calcMargin(i: number) {
-    if (i%4 == 0) {
+    if (i % 4 == 0) {
       this.line = i / 4;
     }
-    return (i > 3) && (i%2 == 0) ? ('-' + (this.line * 50) + 'px') : '0';
+    return (i > 3) && (i % 2 == 0) ? ('-' + (this.line * 30) + 'px') : '0';
   }
 
   goToDetails(title: string) {
-    this.router.navigateByUrl('/details', { state: {title}});
+    this.router.navigateByUrl('/details', {state: {title}});
     window.scrollTo(0, 0);
   }
 }
