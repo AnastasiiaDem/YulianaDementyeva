@@ -416,11 +416,15 @@ svg {
   }
 
   .img-block:nth-child(odd) {
-    height: 120px !important;
+    flex: calc((100vw - 10px) / 2) !important;
+    max-width: calc((100vw - 10px) / 2) !important;
+    height: 220px !important;
   }
 
   .img-block:nth-child(even) {
-    height: 150px !important;
+    flex: calc((100vw - 10px) / 2) !important;
+    max-width: calc((100vw - 10px) / 2) !important;
+    height: 250px !important;
   }
 
   .more {

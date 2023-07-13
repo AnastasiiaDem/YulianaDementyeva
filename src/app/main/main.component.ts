@@ -162,10 +162,17 @@ export class MainComponent implements OnInit, AfterViewInit {
   }
 
   calcMargin(i: number) {
-    if (i % 4 == 0) {
-      this.line = i / 4;
+    if (this.step != 11) {
+      if (i % 4 == 0) {
+        this.line = i / 4;
+      }
+      return (i > 3) && (i % 2 == 0) ? ('-' + (this.line * 30) + 'px') : '0';
+    } else {
+      if (i % 2 == 0) {
+        this.line = i / 2;
+      }
+      return (i > 1) && (i % 2 == 0) ? ('-' + (this.line * 30) + 'px') : '0';
     }
-    return (i > 3) && (i % 2 == 0) ? ('-' + (this.line * 30) + 'px') : '0';
   }
 
   goToDetails(title: string) {

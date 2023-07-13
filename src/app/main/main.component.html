@@ -55,7 +55,7 @@
 </div>
 <div id="book">
   <div class="book-container">
-    <div *ngFor="let item of bookItems; index as i;" class="img-block" [ngClass]="!!item.src ? 'skeleton' : ''" [ngStyle]="{'margin-top': calcMargin(i)}" onclick="" [style.height]="!!item.src ? 'auto' : '0 !important'">
+    <div *ngFor="let item of bookItems; index as i;" class="img-block" [ngClass]="!!item.src ? 'skeleton' : ''" [ngStyle]="{'margin-top': calcMargin(i)}" onclick="" [style.height]="!!item.src ? '' : '0 !important'">
       <div *ngIf="item.hasMore" class="description">
         <p>{{item.name}}</p>
         <div class="see-more" (click)="goToDetails(item.name)">
@@ -117,18 +117,6 @@
     <img src="https://drive.google.com/uc?id=12X63RFo40zmLx4khYwaU8wzxMwygy7wL" alt="" class="skeleton item5">
     <img src="https://drive.google.com/uc?id=1tx4EDOuoGexjHlWKKCiFJria2cx1kPVg" alt="" class="skeleton item6">
 </div>
-<!--<div id="video">-->
-<!--  <div class="block2">-->
-<!--    <img src="https://drive.google.com/uc?id=12fEREu6ynnH65DQdEpFdlgMWEO8D7_6G" alt="" height="208" width="504">-->
-<!--    <img src="https://drive.google.com/uc?id=1vwDez7N95qBOEbBg1e2wpM_uaXWxuY3C" alt="" height="208" width="340">-->
-<!--    <img src="https://drive.google.com/uc?id=120GqlqR1YFUgmGbl4ca2TfUQcK151Tc7" alt="" height="620" width="400">-->
-<!--  </div>-->
-<!--  <img src="https://drive.google.com/uc?id=12eV7TW4hTTO5dJtIXpTUrbdkQfhaiN8B" alt="" height="394" width="860" style="position: absolute;top: 225px;">-->
-<!--  <div class="block2">-->
-<!--    <img src="https://drive.google.com/uc?id=1dVAgtEQodiInPD6ZWF7o_9Bd3vbm4VYG" alt="" height="360" width="640">-->
-<!--    <img src="https://drive.google.com/uc?id=1JhfMHmLZm34gniaNMcWZSPy9M4KRFx5o" alt="" height="360" width="620">-->
-<!--  </div>-->
-<!--</div>-->
 <div class="container" id="parameters2">
   <img class="skeleton cover-img" style="object-position: 85% 0;"
        src="https://drive.google.com/uc?id=1hWur1gDNqIHB4oDk6uToHmEVTcYnzlsR"
