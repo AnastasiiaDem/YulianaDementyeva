@@ -1,7 +1,16 @@
+<div class="back" (click)="router.navigateByUrl('/')">
+  <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path
+      d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"
+      fill="rgb(0 0 0 / 50%)"></path>
+  </svg>
+</div>
 <img *ngIf="title == 'Byzoom'" style="width: 100vw;height: 100vh;display: block;"
      src="https://drive.google.com/uc?id=1BlaUPfD22cQ2hLsUCgpiNHPGd7WpRVUd" alt="">
 <div class="block1">
-  <p class="title">{{displayData.text}}</p>
+  <div class="title-block">
+    <p class="title">{{displayData.text}}</p>
+  </div>
   <img [src]="displayData.main" alt="">
 </div>
 <div class="block2">

@@ -13,7 +13,7 @@ export class DetailsComponent implements OnInit, AfterViewInit {
   title: any;
   grid: any;
 
-  constructor(private router: Router,
+  constructor(public router: Router,
               private spinner: NgxSpinnerService) {
     this.title = this.router.getCurrentNavigation()?.extras.state?.['title'];
     this.displayData = detailData.data.find(e => {

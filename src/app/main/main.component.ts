@@ -32,14 +32,23 @@ export class MainComponent implements OnInit, AfterViewInit {
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
-    let parameters = (document.querySelector('.parameters') as HTMLElement)?.clientHeight;
+    let navbar = (document.querySelector('#navbar') as HTMLElement)?.clientHeight;
+    let parameters = (document.querySelector('#parameters') as HTMLElement)?.clientHeight;
     let parameters2 = (document.querySelector('#parameters2') as HTMLElement)?.clientHeight;
     let book = (document.querySelector('#book') as HTMLElement)?.clientHeight;
     let runway = (document.querySelector('#runway') as HTMLElement)?.clientHeight;
     let polaroid = (document.querySelector('#polaroid') as HTMLElement)?.clientHeight;
     let video = (document.querySelector('#video') as HTMLElement)?.clientHeight;
+    let contact = (document.querySelector('#contact') as HTMLElement)?.clientHeight;
 
-    this.showName = window.pageYOffset < parameters + window.innerWidth - 430 || window.pageYOffset > parameters2 + book + runway + polaroid + video + 550;
+    let B = document.body,
+      H = document.documentElement,
+      height;
+
+    height = Math.max(B.scrollHeight, B.offsetHeight, H.clientHeight, H.scrollHeight, H.offsetHeight);
+
+    this.showName = window.pageYOffset < navbar + parameters || window.pageYOffset > height - contact;
+    // this.showName = window.pageYOffset < parameters + window.innerWidth - 430 || window.pageYOffset > parameters2 + book + runway + polaroid + video + 550;
   }
 
   constructor(private router: Router,
@@ -104,7 +113,7 @@ export class MainComponent implements OnInit, AfterViewInit {
   }
 
   next() {
-   if (this.inc < this.step) {
+    if (this.inc < this.step) {
       this.inc++;
       this.count = this.count - window.innerWidth - 10;
     }
@@ -138,7 +147,7 @@ export class MainComponent implements OnInit, AfterViewInit {
       this.images = document.querySelectorAll('.book-image');
       this.images.forEach((e: any) => {
         if (e.getAttribute('src') == '') {
-          e.parentElement.style.height = 0;
+          e.parentElement.style.display = 'none';
         }
       });
     }, 0);
