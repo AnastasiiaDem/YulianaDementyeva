@@ -5,17 +5,16 @@
       fill="rgb(0 0 0 / 50%)"></path>
   </svg>
 </div>
-<img *ngIf="title == 'Byzoom'" style="width: 100vw;height: 100vh;display: block;"
-     src="https://drive.google.com/uc?id=1BlaUPfD22cQ2hLsUCgpiNHPGd7WpRVUd" alt="">
+<img *ngIf="title == 'Byzoom'" class="byzoom skeleton" src="https://drive.google.com/uc?id=1BlaUPfD22cQ2hLsUCgpiNHPGd7WpRVUd" alt="">
 <div class="block1">
   <div class="title-block">
     <p class="title">{{displayData.text}}</p>
   </div>
-  <img [src]="displayData.main" alt="">
+  <img [src]="displayData.main" alt="" class="skeleton">
 </div>
 <div class="block2">
   <ng-container *ngFor="let item of grid">
-    <img [src]="item.src" alt="" [width]="item.width" [height]="item.height">
+    <img [src]="item.src" alt="" [width]="item.width" [height]="item.height" class="skeleton">
   </ng-container>
 </div>
 

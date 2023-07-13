@@ -29,6 +29,6 @@ export class DetailsComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.spinner.hide();
-    }, 2000);
+    }, 4000);
   }
 }

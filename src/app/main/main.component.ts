@@ -109,7 +109,7 @@ export class MainComponent implements OnInit, AfterViewInit {
     console.log('ngAfterView');
     setTimeout(() => {
       this.spinner.hide();
-    }, 3000);
+    }, 4000);
   }
 
   next() {
@@ -143,14 +143,14 @@ export class MainComponent implements OnInit, AfterViewInit {
   loadMore() {
     this.more += 14;
     this.bookItems = this.allBookItems.slice(0, this.showNum + this.more);
-    setTimeout(() => {
-      this.images = document.querySelectorAll('.book-image');
-      this.images.forEach((e: any) => {
-        if (e.getAttribute('src') == '') {
-          e.parentElement.style.display = 'none';
-        }
-      });
-    }, 0);
+    // setTimeout(() => {
+    //   this.images = document.querySelectorAll('.book-image');
+    //   this.images.forEach((e: any) => {
+    //     if (e.getAttribute('src') == '') {
+    //       e.parentElement.style.height = 0;
+    //     }
+    //   });
+    // }, 0);
   }
 
   showLess() {

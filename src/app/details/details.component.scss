@@ -40,7 +40,8 @@
 }
 
 .back {
-  position: absolute;
+  position: fixed;
+  z-index: 5;
   top: 20px;
   left: 20px;
   display: flex;
@@ -55,6 +56,13 @@
   height: 20px;
   transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
+
+.byzoom {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
 
 @media (max-width: 480px) {
   .block1 {
@@ -73,10 +81,10 @@
       height: auto;
     }
   }
-}
 
-@media (min-width: 481px) and (max-width: 768px) {
-
+  .byzoom {
+    height: 50vh;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
