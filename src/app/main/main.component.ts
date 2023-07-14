@@ -67,6 +67,13 @@ export class MainComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     window.scrollTo(0, 0);
     this.spinner.show();
+    // document.body.getElementsByTagName("video").item(0)?.play();
+    // document.body.getElementsByTagName("video").item(1)?.play();
+    // document.body.getElementsByTagName("video").item(2)?.play();
+    // document.body.getElementsByTagName("video").item(3)?.play();
+    // document.body.getElementsByTagName("video").item(4)?.play();
+    // document.body.getElementsByTagName("video").item(5)?.play();
+    //
     this.slider = document.getElementsByClassName('slider-width')[0];
 
     if (window.innerWidth <= 480) {

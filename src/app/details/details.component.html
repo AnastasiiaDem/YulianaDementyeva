@@ -5,7 +5,9 @@
       fill="rgb(0 0 0 / 50%)"></path>
   </svg>
 </div>
-<img *ngIf="title == 'Byzoom'" class="byzoom skeleton" src="https://drive.google.com/uc?id=1BlaUPfD22cQ2hLsUCgpiNHPGd7WpRVUd" alt="">
+<video *ngIf="title == 'Byzoom'" autoplay loop muted playsinline class="byzoom skeleton">
+  <source src="https://drive.google.com/uc?id=1fuqL2ii-2rGU8FBC-rKxK0bnSNfZz0xf" type="video/webm">
+</video>
 <div class="block1">
   <div class="title-block">
     <p class="title">{{displayData.text}}</p>
@@ -14,7 +16,10 @@
 </div>
 <div class="block2">
   <ng-container *ngFor="let item of grid">
-    <img [src]="item.src" alt="" [width]="item.width" [height]="item.height" class="skeleton">
+    <img *ngIf="!item.isVideo" [src]="item.src" alt="" [width]="item.width" [height]="item.height" class="skeleton">
+    <video *ngIf="item.isVideo" autoplay loop muted playsinline [width]="item.width" [height]="item.height" class="skeleton">
+      <source [src]="item.src" type="video/webm">
+    </video>
   </ng-container>
 </div>
 

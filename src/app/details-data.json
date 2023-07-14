@@ -6,34 +6,40 @@
       "main": "https://drive.google.com/uc?id=1ljYE2sRkmMVvWfopfCbSRMBQqLIXETev",
       "grid": [
         {
-          "src": "https://drive.google.com/uc?id=1x7T5RSEWRp0AO3YVDBfyocgkAxGruOhS",
-            "width": 345,
-            "height": 400
+          "src": "https://drive.google.com/uc?id=1qmZBTQFKSg_ZQfyVHviaCUIoVEC_SY7L",
+          "width": 345,
+          "height": 400,
+          "isVideo": true
         },
         {
           "src": "https://drive.google.com/uc?id=1_LyoDwtox1kWallVlAL8WoRe4kfT-6a0",
           "width": 500,
-          "height": 400
+          "height": 400,
+          "isVideo": false
         },
         {
           "src": "https://drive.google.com/uc?id=1-KwAfSfrRrzcVLi4ylmJZu8UbkqsQraP",
           "width": 395,
-          "height": 400
+          "height": 400,
+          "isVideo": false
         },
         {
           "src": "https://drive.google.com/uc?id=186U0jGzFqWHHvSi29rK4MXjULK-jmuVN",
           "width": 345,
-          "height": 400
+          "height": 400,
+          "isVideo": false
         },
         {
           "src": "https://drive.google.com/uc?id=1xiHpIlwFOiIYxWnV0CB4yZgdNDwahGvQ",
           "width": 500,
-          "height": 400
+          "height": 400,
+          "isVideo": false
         },
         {
-          "src": "https://drive.google.com/uc?id=1iL0LVmL2VUI5NeREkqxaryea5cogC4h5",
+          "src": "https://drive.google.com/uc?id=1X1-zf398P0gT26oAdjjuDfQugo3SEYQX",
           "width": 395,
-          "height": 400
+          "height": 400,
+          "isVideo": true
         }
       ]
     },
@@ -44,23 +50,27 @@
       "grid": [
         {
           "src": "https://drive.google.com/uc?id=1ifiTZ9ipjKt-hKm2xXycfv_CnarXh4wi",
-            "width": 285,
-            "height": 400
+          "width": 285,
+          "height": 400,
+          "isVideo": false
         },
         {
           "src": "https://drive.google.com/uc?id=1h8-jMtclOKwmQOS6yIZCh17Plf8STMz8",
           "width": 340,
-          "height": 500
+          "height": 500,
+          "isVideo": false
         },
         {
           "src": "https://drive.google.com/uc?id=1-IVZ5fBKCP8-Yf0sFKbDraFdP6fgbHg-",
           "width": 310,
-          "height": 450
+          "height": 450,
+          "isVideo": false
         },
         {
           "src": "https://drive.google.com/uc?id=1-zdMONkcaSKIuwr-2LvYGJJ-i0hbMY7x",
           "width": 285,
-          "height": 400
+          "height": 400,
+          "isVideo": false
         }
       ]
     },
@@ -71,38 +81,45 @@
       "grid": [
         {
           "src": "https://drive.google.com/uc?id=1YfFeCgL50vVptut6ZJbqpLLXC1nG5akW",
-            "width": 600,
-            "height": 500
+          "width": 600,
+          "height": 500,
+          "isVideo": false
         },
         {
           "src": "https://drive.google.com/uc?id=1ZB3vhuvQ5XzILbzSggJGbCPQ0-LwTNrI",
           "width": 370,
-          "height": 500
+          "height": 500,
+          "isVideo": false
         },
         {
-          "src": "https://drive.google.com/uc?id=11og_2AoZyAvQWuuZCmN1LPlpWVtesKaP",
+          "src": "https://drive.google.com/uc?id=1lKNOlsQIkbl1uopvn5WrickJZ2N0MpIq",
           "width": 270,
-          "height": 500
+          "height": 500,
+          "isVideo": true
         },
         {
-          "src": "https://drive.google.com/uc?id=1YlXy1TxHdIG7sQ9Y7cPnqG593K0o-elG",
+          "src": "https://drive.google.com/uc?id=13ctYbUrcv42yQ6TCSvVkCprpSNRhp1yC",
           "width": 280,
-          "height": 500
+          "height": 500,
+          "isVideo": true
         },
         {
           "src": "https://drive.google.com/uc?id=1ueJ1CxH6F5qnQdufSp19izcipAm_-ARb",
           "width": 300,
-          "height": 500
+          "height": 500,
+          "isVideo": false
         },
         {
-          "src": "https://drive.google.com/uc?id=1auxGCTpGqjCJvWwlGNPhnThQqY-Yr0hr",
+          "src": "https://drive.google.com/uc?id=1cJdc9lrUkEgeNCkzJmBfWjaqRVU7PjJ-",
           "width": 370,
-          "height": 500
+          "height": 500,
+          "isVideo": true
         },
         {
           "src": "https://drive.google.com/uc?id=1Zlu1vezTDSVxSaQPScHjXkP9Mh4-BQBR",
           "width": 270,
-          "height": 500
+          "height": 500,
+          "isVideo": false
         }
       ]
     },
@@ -113,43 +130,51 @@
       "grid": [
         {
           "src": "https://drive.google.com/uc?id=1nLrAFY973JYLEuPAL8g6KzNbdQCJ_LLe",
-            "width": 620,
-            "height": 550
+          "width": 620,
+          "height": 550,
+          "isVideo": false
         },
         {
           "src": "https://drive.google.com/uc?id=1me6nhr9drfNIzZ-pubgKSxJS5zwYxsSG",
           "width": 640,
-          "height": 550
+          "height": 550,
+          "isVideo": false
         },
         {
           "src": "https://drive.google.com/uc?id=1y51ytxvnHgLLUQb_Racm3JUWd5kM2S6l",
           "width": 414,
-          "height": 500
+          "height": 500,
+          "isVideo": false
         },
         {
           "src": "https://drive.google.com/uc?id=1qJfyxFUo7fjmUtD7h8dIRPPEftCv1EG0",
           "width": 413,
-          "height": 500
+          "height": 500,
+          "isVideo": false
         },
         {
-          "src": "https://drive.google.com/uc?id=1hRWFyntMhDuR2OoAZ7kVMSsEBv2s1cep",
+          "src": "https://drive.google.com/uc?id=19HxZQ2S9db0Sh_2lmuaMr-CT1lbSKzj3",
           "width": 413,
-          "height": 500
+          "height": 500,
+          "isVideo": true
         },
         {
-          "src": "https://drive.google.com/uc?id=1qnoaUYmLDY3-NAwShxIKFh9b6PyPnVpr",
+          "src": "https://drive.google.com/uc?id=1pqChb2tyfnJKDwWjzPTtpHMcHuYyIblt",
           "width": 414,
-          "height": 500
+          "height": 500,
+          "isVideo": true
         },
         {
           "src": "https://drive.google.com/uc?id=1041stoJPNt74gT4uIi_2YvhC0lqC_zIg",
           "width": 413,
-          "height": 500
+          "height": 500,
+          "isVideo": false
         },
         {
           "src": "https://drive.google.com/uc?id=1S6kLwVYagXdARM_elJVWIE-a8cpG47LO",
           "width": 413,
-          "height": 500
+          "height": 500,
+          "isVideo": false
         }
       ]
     },
@@ -160,13 +185,15 @@
       "grid": [
         {
           "src": "https://drive.google.com/uc?id=1CSBF5_88DfAShufly0bEDDjtkW6LeCP4",
-            "width": 620,
-            "height": 550
+          "width": 620,
+          "height": 550,
+          "isVideo": false
         },
         {
           "src": "https://drive.google.com/uc?id=1yIOzPChavRdn0VwqHR_yNooftiEFyAke",
           "width": 640,
-          "height": 550
+          "height": 550,
+          "isVideo": false
         }
       ]
     },
@@ -177,18 +204,21 @@
       "grid": [
         {
           "src": "https://drive.google.com/uc?id=14nEILGx_qz-RDozMSeDp8_KKsifdsfhx",
-            "width": 400,
-            "height": 500
+          "width": 400,
+          "height": 500,
+          "isVideo": false
         },
         {
           "src": "https://drive.google.com/uc?id=1CXIeasyKfdnUHGBW2HGk-mEvu5uxGFLU",
           "width": 440,
-          "height": 600
+          "height": 600,
+          "isVideo": false
         },
         {
           "src": "https://drive.google.com/uc?id=1COE4dvmbpXAh_7CxSm0xHe11oizK0fIw",
           "width": 400,
-          "height": 500
+          "height": 500,
+          "isVideo": false
         }
       ]
     }
