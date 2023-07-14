@@ -37,6 +37,7 @@
 
   video, img {
     object-fit: cover;
+    flex: auto;
   }
 }
 
@@ -94,5 +95,9 @@
 }
 
 @media (min-width: 1440px) {
-
+  .block2 {
+    video, img {
+      height: auto;
+    }
+  }
 }
