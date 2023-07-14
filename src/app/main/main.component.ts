@@ -67,13 +67,6 @@ export class MainComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     window.scrollTo(0, 0);
     this.spinner.show();
-    // document.body.getElementsByTagName("video").item(0)?.play();
-    // document.body.getElementsByTagName("video").item(1)?.play();
-    // document.body.getElementsByTagName("video").item(2)?.play();
-    // document.body.getElementsByTagName("video").item(3)?.play();
-    // document.body.getElementsByTagName("video").item(4)?.play();
-    // document.body.getElementsByTagName("video").item(5)?.play();
-    //
     this.slider = document.getElementsByClassName('slider-width')[0];
 
     if (window.innerWidth <= 480) {
@@ -139,7 +132,7 @@ export class MainComponent implements OnInit, AfterViewInit {
       this.count = this.count + window.innerWidth + 10;
     }
 
-    if (this.minus && this.inc == 0) {
+    if (this.minus && !this.plus && this.inc == 0) {
       this.count = this.count - 10 - ((window.innerWidth - 40) / 5);
       this.minus = false;
     }
