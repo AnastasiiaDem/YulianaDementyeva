@@ -20,6 +20,7 @@
     <img *ngIf="!item.isVideo" [src]="item.src" alt="" [width]="item.width" [height]="item.height" class="skeleton">
     <video *ngIf="item.isVideo" autoplay loop muted playsinline playsInLine [width]="item.width" [height]="item.height" class="skeleton">
       <source [src]="item.src" type="video/webm">
+      <source [src]="item.srcMP4" type="video/mp4">
     </video>
   </ng-container>
 </div>
