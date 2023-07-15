@@ -212,6 +212,12 @@
   </p>
 </div>
 <!--</ng-container>-->
-
+<div class="back" (click)="up()" *ngIf="showUp">
+  <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path
+      d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"
+      fill="rgb(0 0 0 / 50%)"></path>
+  </svg>
+</div>
 <ngx-spinner bdColor="rgb(255,255,255)" size="default" color="rgba(0,0,0,0.5)" type="ball-fussion"
              [fullScreen]="true"></ngx-spinner>

@@ -1,7 +1,8 @@
-import {AfterViewInit, Component, Input, OnInit} from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import detailData from '../details-data.json';
 import {Router} from '@angular/router';
 import {NgxSpinnerService} from 'ngx-spinner';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-details',
@@ -14,7 +15,8 @@ export class DetailsComponent implements OnInit, AfterViewInit {
   grid: any;
 
   constructor(public router: Router,
-              private spinner: NgxSpinnerService) {
+              private spinner: NgxSpinnerService,
+              private location: Location) {
     this.title = this.router.getCurrentNavigation()?.extras.state?.['title'];
     this.displayData = detailData.data.find(e => {
       return e.title == this.title;
@@ -31,5 +33,9 @@ export class DetailsComponent implements OnInit, AfterViewInit {
     setTimeout(() => {
       this.spinner.hide();
     }, 4000);
+  }
+
+  back() {
+    this.location.back();
   }
 }

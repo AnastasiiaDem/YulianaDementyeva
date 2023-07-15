@@ -152,17 +152,17 @@
           "isVideo": false
         },
         {
-          "src": "https://drive.google.com/uc?export=view&id=1Zi3fXGHscYMserfTc1cZ4EcfQm6zV8X8",
-          "width": 413,
-          "height": 500,
-          "isVideo": false
-        },
-        {
           "src": "https://drive.google.com/uc?export=view&id=19HxZQ2S9db0Sh_2lmuaMr-CT1lbSKzj3",
           "srcMP4": "https://drive.google.com/uc?export=view&id=13dcK1wq7YnBL_BqIS3W6yhYSDH3iBX5P",
           "width": 413,
           "height": 500,
           "isVideo": true
+        },
+        {
+          "src": "https://drive.google.com/uc?export=view&id=1Zi3fXGHscYMserfTc1cZ4EcfQm6zV8X8",
+          "width": 413,
+          "height": 500,
+          "isVideo": false
         },
         {
           "src": "https://drive.google.com/uc?export=view&id=1pqChb2tyfnJKDwWjzPTtpHMcHuYyIblt",

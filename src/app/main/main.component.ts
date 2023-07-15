@@ -11,6 +11,7 @@ import {NgxSpinnerService} from 'ngx-spinner';
 })
 export class MainComponent implements OnInit, AfterViewInit {
   showName = true;
+  showUp = false;
   bookItems: any = [];
   runwayItems: any;
   count = 0;
@@ -48,6 +49,8 @@ export class MainComponent implements OnInit, AfterViewInit {
     height = Math.max(B.scrollHeight, B.offsetHeight, H.clientHeight, H.scrollHeight, H.offsetHeight);
 
     this.showName = window.pageYOffset < navbar + parameters || window.pageYOffset > height - contact;
+
+    this.showUp = window.pageYOffset > navbar + parameters + book;
     // this.showName = window.pageYOffset < parameters + window.innerWidth - 430 || window.pageYOffset > parameters2 + book + runway + polaroid + video + 550;
   }
 
@@ -65,7 +68,7 @@ export class MainComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
     this.spinner.show();
     this.slider = document.getElementsByClassName('slider-width')[0];
 
@@ -177,5 +180,9 @@ export class MainComponent implements OnInit, AfterViewInit {
 
   goToDetails(title: string) {
     this.router.navigateByUrl('/details', {state: {title}});
+  }
+
+  up() {
+    window.scrollTo(0, 0);
   }
 }
