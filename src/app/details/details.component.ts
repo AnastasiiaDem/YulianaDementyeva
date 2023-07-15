@@ -23,6 +23,7 @@ export class DetailsComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
+    window.scrollTo(0, 0);
     this.spinner.show();
   }
 

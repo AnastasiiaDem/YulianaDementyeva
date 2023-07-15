@@ -26,11 +26,13 @@
 }
 
 #video {
-  margin-top: 100px;
+  margin-top: 10%;
   display: grid;
-  grid-template-rows: 300px 350px 350px;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 20px;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  //grid-template-rows: 300px 350px 350px;
+  //grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
 
   video, img {
     width: 100%;
@@ -67,7 +69,7 @@
 }
 
 #parameters2 {
-  margin-top: 20px;
+  margin-top: 10%;
 }
 
 .cover-img {
@@ -291,6 +293,10 @@ button {
   position: absolute;
   top: 50%;
   cursor: pointer;
+
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 .prev {
@@ -318,7 +324,6 @@ button {
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
-  line-height: normal;
   text-transform: lowercase;
   display: flex;
   justify-content: center;
@@ -342,6 +347,8 @@ button {
   .block {
     display: flex;
     flex-direction: column;
+    flex: auto;
+    overflow: hidden;
   }
 }
 
@@ -352,7 +359,7 @@ button {
 
   a {
     color: rgba(0, 0, 0, 0.50);
-    line-height: 30px;
+    line-height: 20px;
   }
 }
 
@@ -382,11 +389,11 @@ svg {
   }
 }
 
-//320px — 480px: Mobile devices
-//481px — 768px: iPads, Tablets
-//769px — 1024px: Small screens, laptops
-//1025px — 1200px: Desktops, large screens
-//1201px and more —  Extra large screens, TV
+//320px—480px: Mobile devices
+//481px—768px: iPads, Tablets
+//769px—1024px: Small screens, laptops
+//1025px—1200px: Desktops, large screens
+//1201px and more— Extra large screens, TV
 
 @media (max-width: 480px) {
   .slider-container {
@@ -433,7 +440,9 @@ svg {
   }
 
   #video {
-    grid-template-rows: 200px 250px 200px 200px 280px !important;
+    //grid-template-rows: 200px 250px 200px 200px 280px !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
   }
 
   .item1 {
@@ -494,6 +503,12 @@ svg {
 
   .img-block:nth-child(even) {
     height: 250px !important;
+  }
+
+  #video {
+    //grid-template-rows: 200px 250px 200px 200px 280px !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
   }
 }
 

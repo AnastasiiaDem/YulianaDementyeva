@@ -177,6 +177,5 @@ export class MainComponent implements OnInit, AfterViewInit {
 
   goToDetails(title: string) {
     this.router.navigateByUrl('/details', {state: {title}});
-    window.scrollTo(0, 0);
   }
 }
