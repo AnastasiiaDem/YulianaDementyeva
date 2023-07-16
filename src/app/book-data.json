@@ -249,246 +249,246 @@
   "data2": [
     {
       "id": 2,
-      "src": "./assets/images/",
+      "src": "../assets/images/spazio.png",
       "name": "Spazio",
       "hasMore": true
     },
     {
       "id": 1,
-      "src": "https://drive.google.com/uc?export=view&id=1srD3kMjFOiw2onLYN0kwU45XlffO0che",
+      "src": "../assets/images/clazzy.png",
       "name": "Clazzy",
       "hasMore": true
     },
     {
       "id": 4,
-      "src": "https://drive.google.com/uc?export=view&id=1bYHBExKyxyCUnubqgPwmNXsWjwkoo8ey",
+      "src": "../assets/images/cendre.png",
       "name": "Cendre",
       "hasMore": true
     },
     {
       "id": 3,
-      "src": "https://drive.google.com/uc?export=view&id=1y_97v-mp6ya0jy3eBZK0yXef5dY6CKPP",
+      "src": "../assets/images/moonaya.png",
       "name": "Moonaya",
       "hasMore": true
     },
     {
       "id": 6,
-      "src": "https://drive.google.com/uc?export=view&id=1gkklCdNKN1SOEFp3_XyA5j6MMRGDU8D6",
+      "src": "../assets/images/byzoom.png",
       "name": "Byzoom",
       "hasMore": true
     },
     {
       "id": 5,
-      "src": "https://drive.google.com/uc?export=view&id=1imlno_PbaebTwrmMvN20yhAPzVm63jYt",
+      "src": "../assets/images/nerolli.png",
       "name": "Nerolli",
       "hasMore": false
     },
     {
       "id": 8,
-      "src": "https://drive.google.com/uc?export=view&id=16YasYbxf0pQu_iBZQVKxcu_Sv38qiEkz",
+      "src": "../assets/images/garcia.png",
       "name": "Garcia",
       "hasMore": false
     },
     {
       "id": 7,
-      "src": "https://drive.google.com/uc?export=view&id=12uff4OUcBZlFT-J0xji7E2qmQ1rw8lR4",
+      "src": "../assets/images/theicon.png",
       "name": "The Icon",
       "hasMore": true
     },
     {
       "id": 10,
-      "src": "https://drive.google.com/uc?export=view&id=16uUPcg0dTON7CQzLA2fNTrwkK7NoLfjL",
+      "src": "../assets/images/buro.png",
       "name": "Buro",
       "hasMore": false
     },
     {
       "id": 9,
-      "src": "https://drive.google.com/uc?export=view&id=1RcPMWkgY1joooQtaUoYuS7-vqOq_T7Gk",
+      "src": "../assets/images/canessa.png",
       "name": "Canessa",
       "hasMore": false
     },
     {
       "id": 11,
-      "src": "https://drive.google.com/uc?export=view&id=1Zh2VCPojgqBI5olZPduP2blBKErMvGsg",
+      "src": "../assets/images/milk.png",
       "name": "Milk",
       "hasMore": false
     },
     {
       "id": 12,
-      "src": "https://drive.google.com/uc?export=view&id=1f8-G2-V3JPntvP0uNWpqrNHisNaIZ6Be",
+      "src": "../assets/images/box.png",
       "name": "Box",
       "hasMore": false
     },
     {
       "id": 13,
-      "src": "https://drive.google.com/uc?export=view&id=1RNVNYiMpr4p0ghutv7-dEaLT3n9Tzf4e",
+      "src": "../assets/images/vogue2.png",
       "name": "Vogue",
       "hasMore": false
     },
     {
       "id": 14,
-      "src": "https://drive.google.com/uc?export=view&id=1dfoPx7bX_7p6LZo4suU8M1rjx11BocYf",
+      "src": "../assets/images/vogue4.png",
       "name": "Vogue",
       "hasMore": false
     },
     {
       "id": 15,
-      "src": "https://drive.google.com/uc?export=view&id=1FzU0bx5OXvqWgnK4pzuXvEqcPq4rQ375",
+      "src": "../assets/images/vogue.png",
       "name": "Vogue",
       "hasMore": false
     },
     {
       "id": 19,
-      "src": "https://drive.google.com/uc?export=view&id=1Bg2iZHlwfCesl4A-Ga2uxFDt7nIYzmF5",
+      "src": "../assets/images/pitaya.png",
       "name": "Pitaya",
       "hasMore": false
     },
     {
       "id": 17,
-      "src": "https://drive.google.com/uc?export=view&id=1-La9jvoYFqNCR29xEHMtgPe5m0q4yV16",
+      "src": "../assets/images/wedding.png",
       "name": "Wedding",
       "hasMore": false
     },
     {
       "id": 18,
-      "src": "https://drive.google.com/uc?export=view&id=15Rb0rmRp3E23AGPg8sOynJfDTX5ByPyc",
+      "src": "../assets/images/kulikov.png",
       "name": "Kulikov",
       "hasMore": false
     },
     {
       "id": 16,
-      "src": "https://drive.google.com/uc?export=view&id=1NMMJJYPqr2C4wqef0Z4VNXhUyqUwPnZI",
+      "src": "../assets/images/bodygoals.png",
       "name": "Bodygoals",
       "hasMore": false
     },
     {
       "id": 20,
-      "src": "https://drive.google.com/uc?export=view&id=1qO5t1jm5Mb6KD0xLleSSh1MCy7Vr9o8F",
+      "src": "../assets/images/1.png",
       "name": "1",
       "hasMore": false
     },
     {
       "id": 22,
-      "src": "https://drive.google.com/uc?export=view&id=1LWlf8DT_8ILGMvhrUySTgJqrfqwqzNix",
+      "src": "../assets/images/bicholla.png",
       "name": "Bicholla",
       "hasMore": false
     },
     {
       "id": 21,
-      "src": "https://drive.google.com/uc?export=view&id=1AbgS1-sIbZmc4yqXASsntNVdw7GtvIcl",
+      "src": "../assets/images/bicholla-campaign.png",
       "name": "Bicholla",
       "hasMore": false
     },
     {
       "id": 23,
-      "src": "https://drive.google.com/uc?export=view&id=1Iz3A6FmJzROeFjLDmWPbp6pmUY3wmeMD",
+      "src": "../assets/images/harpers-bazaar3.png",
       "name": "Harpers Bazaar",
       "hasMore": false
     },
     {
       "id": 24,
-      "src": "https://drive.google.com/uc?export=view&id=18RkWebb83rKYgP6cwTba2RJDBB-epCPu",
+      "src": "../assets/images/elle-ukraine.png",
       "name": "Elle",
       "hasMore": false
     },
     {
       "id": 25,
-      "src": "https://drive.google.com/uc?export=view&id=1qWu3QQ1xyZKd6WN8yz8Ud28sXDLhN6SP",
+      "src": "../assets/images/givenchy.png",
       "name": "Givenchy",
       "hasMore": false
     },
     {
       "id": 26,
-      "src": "https://drive.google.com/uc?export=view&id=1t0xgKktRAGWl-mYjVRjIghGyGDDnQ2Cy",
+      "src": "../assets/images/amish.png",
       "name": "Amish",
       "hasMore": false
     },
     {
       "id": 27,
-      "src": "https://drive.google.com/uc?export=view&id=1oZD2ESGUTQqguvQTVdL5rcgClMr2pKe1",
+      "src": "../assets/images/vogue3.png",
       "name": "Vogue",
       "hasMore": false
     },
     {
       "id": 28,
-      "src": "https://drive.google.com/uc?export=view&id=1vs9_ED6vc3eVbnHc9WONZErkl9ix6Mop",
+      "src": "../assets/images/tush.png",
       "name": "Tush",
       "hasMore": false
     },
     {
       "id": 33,
-      "src": "https://drive.google.com/uc?export=view&id=13k0fueD-5A5d1PdoDULfIAO7J_nPWgEp",
+      "src": "../assets/images/vogue5.png",
       "name": "Vogue",
       "hasMore": false
     },
     {
       "id": 35,
-      "src": "https://drive.google.com/uc?export=view&id=1XnmhkdmeFkjMVl21XmQu4LTnflLPRM9P",
+      "src": "../assets/images/elle.png",
       "name": "Elle",
       "hasMore": false
     },
     {
       "id": 32,
-      "src": "https://drive.google.com/uc?export=view&id=17t5C3YVSGeGWCesKT4iRhYO9ehuqL8YE",
+      "src": "../assets/images/scmp.png",
       "name": "SCMP",
       "hasMore": false
     },
     {
       "id": 36,
-      "src": "https://drive.google.com/uc?export=view&id=1MzXSIOwKbWVL0CaZLIE7h3yvj5uXIxFT",
+      "src": "../assets/images/grazia-2.png",
       "name": "Grazia",
       "hasMore": false
     },
     {
       "id": 34,
-      "src": "https://drive.google.com/uc?export=view&id=1hu0exf4m9szivODY_Ti7aD8sbjdXH03Z",
+      "src": "../assets/images/elle2.png",
       "name": "Elle",
       "hasMore": false
     },
     {
       "id": 30,
-      "src": "https://drive.google.com/uc?export=view&id=1iFRSy3yaLGU8VbPSqMUPgOWQLmysLSkR",
+      "src": "../assets/images/2.png",
       "name": "2",
       "hasMore": false
     },
     {
       "id": 37,
-      "src": "https://drive.google.com/uc?export=view&id=1089HfMyMogp5TO-WxGEMG03Jnp-aX96o",
+      "src": "../assets/images/grazia.png",
       "name": "Grazia",
       "hasMore": false
     },
     {
       "id": 31,
-      "src": "https://drive.google.com/uc?export=view&id=1QsbKvEgIquPH2E_37sUFyZO9wR0DugCb",
+      "src": "../assets/images/so-figaro.png",
       "name": "So Figaro",
       "hasMore": false
     },
     {
       "id": 29,
-      "src": "https://drive.google.com/uc?export=view&id=1puGXBrqrkwZ-qBP26OHt8-ZdNpbU3Zvn",
+      "src": "../assets/images/amica.png",
       "name": "Amica",
       "hasMore": false
     },
     {
       "id": 38,
-      "src": "https://drive.google.com/uc?export=view&id=19vFbnbAcumBcJrDz8ujJAM0O9wdtIJpM",
+      "src": "../assets/images/grazia-3.png",
       "name": "Grazia",
       "hasMore": false
     },
     {
       "id": 39,
-      "src": "https://drive.google.com/uc?export=view&id=1lb9al0h0Mz7dZ_vt2aRM0Q0veWILjZEC",
+      "src": "../assets/images/figaro.png",
       "name": "Figaro",
       "hasMore": false
     },
     {
       "id": 40,
-      "src": "https://drive.google.com/uc?export=view&id=1RUY_rguukgnHcr6tJRKCIUQBjYBGf46j",
+      "src": "../assets/images/monde.png",
       "name": "Monde"
     },
     {
       "id": 43,
-      "src": "https://drive.google.com/uc?export=view&id=1BHMoFyU-SInUyMbyaOWaJ-vvLDwf3MaE",
+      "src": "../assets/images/cosmopolitan.png",
       "name": "Cosmopolitan",
       "hasMore": false
     }

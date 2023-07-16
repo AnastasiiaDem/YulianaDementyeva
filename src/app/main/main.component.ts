@@ -50,7 +50,7 @@ export class MainComponent implements OnInit, AfterViewInit {
 
     this.showName = window.pageYOffset < navbar + parameters || window.pageYOffset > height - contact;
 
-    this.showUp = window.pageYOffset > navbar + parameters + book;
+    this.showUp = window.pageYOffset > navbar + parameters + book - 400;
     // this.showName = window.pageYOffset < parameters + window.innerWidth - 430 || window.pageYOffset > parameters2 + book + runway + polaroid + video + 550;
   }
 
@@ -60,8 +60,8 @@ export class MainComponent implements OnInit, AfterViewInit {
     //   this.transition = true;
     //   this.body = document.querySelector('body') as HTMLElement;
     //   this.body.style.overflow = 'hidden';
-    this.runwayItems = runwayData.data;
-    this.allBookItems = bookData.data;
+    this.runwayItems = runwayData.data2;
+    this.allBookItems = bookData.data2;
     this.bookItems = this.allBookItems.slice(0, this.showNum);
     //   this.showSpinner = false;
     // }, 1000);
