@@ -359,7 +359,7 @@
           "isVideo": true
         },
         {
-          "src": "./assets/images/clazzy/clazzy 4.png",
+          "src": "./assets/images/clazzy/clazzy4.png",
           "width": 300,
           "height": 500,
           "isVideo": false
@@ -375,22 +375,22 @@
     {
       "title": "Cendre",
       "text": "CENDRÉ",
-      "main": "./assets/images/cendre/yulianadementyeva_335764658_3479217002390563_5819668988762752706_n%20(1).png",
+      "main": "./assets/images/cendre/yulianadementyeva_335764658_3479217002390563_5819668988762752706_n.png",
       "grid": [
         {
-          "src": "./assets/images/cendre/324544674_1145290746153815_6215838574588772617_n%20(1).png",
+          "src": "./assets/images/cendre/324544674_1145290746153815_6215838574588772617_n.png",
           "width": 620,
           "height": 550,
           "isVideo": false
         },
         {
-          "src": "./assets/images/cendre/yulianadementyeva_323823959_489771816416563_2467756222928474016_n (1).png",
+          "src": "./assets/images/cendre/yulianadementyeva_323823959_489771816416563_2467756222928474016_n.png",
           "width": 640,
           "height": 550,
           "isVideo": false
         },
         {
-          "src": "./assets/images/cendre/yulianadementyeva_323956882_164806726286882_7772321281935236659_n%20(3).png",
+          "src": "./assets/images/cendre/yulianadementyeva_323956882_164806726286882_7772321281935236659_n.png",
           "width": 414,
           "height": 500,
           "isVideo": false
@@ -416,13 +416,13 @@
           "isVideo": true
         },
         {
-          "src": "./assets/images/cendre/yulianadementyeva_307798076_195459932922393_2701760104420263133_n%20(1).png",
+          "src": "./assets/images/cendre/yulianadementyeva_307798076_195459932922393_2701760104420263133_n.png",
           "width": 413,
           "height": 500,
           "isVideo": false
         },
         {
-          "src": "./assets/images/cendre/yulianadementyeva_307582770_3239534856259545_8900779988144409706_n%20(1).png",
+          "src": "./assets/images/cendre/yulianadementyeva_307582770_3239534856259545_8900779988144409706_n.png",
           "width": 413,
           "height": 500,
           "isVideo": false
@@ -432,10 +432,10 @@
     {
       "title": "Byzoom",
       "text": "Byzoom",
-      "main": "./assets/images/byzoom/byzoomfitness_352328006_667532172078288_7223880799643781101_n%20(1).png",
+      "main": "./assets/images/byzoom/byzoomfitness_352328006_667532172078288_7223880799643781101_n.png",
       "grid": [
         {
-          "src": "./assets/images/byzoom/byzoomfitness_351405749_3400448366934151_4950509068201414822_n%20(1).png",
+          "src": "./assets/images/byzoom/byzoomfitness_351405749_3400448366934151_4950509068201414822_n.png",
           "width": 500,
           "height": 550,
           "isVideo": false
@@ -448,7 +448,7 @@
           "isVideo": true
         },
         {
-          "src": "./assets/images/byzoom/byzoomfitness_354494250_1262864987670852_8837927189416854096_n%20(1).png",
+          "src": "./assets/images/byzoom/byzoomfitness_354494250_1262864987670852_8837927189416854096_n.png",
           "width": 395,
           "height": 550,
           "isVideo": false
