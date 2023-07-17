@@ -21,7 +21,6 @@ export class DetailsComponent implements OnInit, AfterViewInit {
     this.displayData = detailData.data2.find(e => {
       return e.title == this.title;
     });
-    debugger
     this.grid = this.displayData.grid;
   }
 
