@@ -33,7 +33,7 @@ export class DetailsComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.spinner.hide();
-    }, 4000);
+    }, 2000);
   }
 
   back() {
