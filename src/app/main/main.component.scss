@@ -463,13 +463,13 @@ svg {
   .img-block:nth-child(odd) {
     flex: calc((100vw - 10px) / 2) !important;
     max-width: calc((100vw - 10px) / 2) !important;
-    height: 220px !important;
+    height: 250px !important;
   }
 
   .img-block:nth-child(even) {
     flex: calc((100vw - 10px) / 2) !important;
     max-width: calc((100vw - 10px) / 2) !important;
-    height: 250px !important;
+    height: 280px !important;
   }
 
   .more {
