@@ -109,7 +109,6 @@ export class MainComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    console.log('ngAfterView');
     setTimeout(() => {
       this.spinner.hide();
     }, 4000);

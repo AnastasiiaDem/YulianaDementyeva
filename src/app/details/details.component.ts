@@ -18,9 +18,10 @@ export class DetailsComponent implements OnInit, AfterViewInit {
               private spinner: NgxSpinnerService,
               private location: Location) {
     this.title = this.router.getCurrentNavigation()?.extras.state?.['title'];
-    this.displayData = detailData.data.find(e => {
+    this.displayData = detailData.data2.find(e => {
       return e.title == this.title;
     });
+    debugger
     this.grid = this.displayData.grid;
   }
 

@@ -242,5 +242,249 @@
         }
       ]
     }
+  ],
+  "data2": [
+    {
+      "title": "Moonaya",
+      "text": "Moonaya",
+      "main": "./assets/images/moonaya/yulianadementyeva_120042161_3491927534202622_5192634074696038402_n.png",
+      "grid": [
+        {
+          "src": "https://drive.google.com/uc?export=view&id=1qmZBTQFKSg_ZQfyVHviaCUIoVEC_SY7L",
+          "srcMP4": "https://drive.google.com/uc?export=view&id=1PjJZ0EieXCvadET5qda9iKX3DCjIVqN3",
+          "width": 345,
+          "height": 400,
+          "isVideo": true
+        },
+        {
+          "src": "./assets/images/moonaya/moonaya_design_120451962_354018288984343_4619329531798501063_n.png",
+          "width": 500,
+          "height": 400,
+          "isVideo": false
+        },
+        {
+          "src": "./assets/images/moonaya/moonaya_design_120601557_652124099063372_168108984867662231_n.png",
+          "width": 395,
+          "height": 400,
+          "isVideo": false
+        },
+        {
+          "src": "./assets/images/moonaya/moonaya_design_120294518_2488268491474023_5814883773326529404_n.png",
+          "width": 345,
+          "height": 400,
+          "isVideo": false
+        },
+        {
+          "src": "./assets/images/moonaya/moonaya_design_120144805_1277051449321944_2101307820198861934_n.png",
+          "width": 500,
+          "height": 400,
+          "isVideo": false
+        },
+        {
+          "src": "https://drive.google.com/uc?export=view&id=1X1-zf398P0gT26oAdjjuDfQugo3SEYQX",
+          "srcMP4": "https://drive.google.com/uc?export=view&id=1tnkE_vpMmLAW1mOIPFK79JG033X2beFP",
+          "width": 395,
+          "height": 400,
+          "isVideo": true
+        }
+      ]
+    },
+    {
+      "title": "Spazio",
+      "text": "Spazio",
+      "main": "./assets/images/spazio/spazio.ua_132029160_874055656713865_3973120897515717394_n.png",
+      "grid": [
+        {
+          "src": "./assets/images/spazio/298DEF3B-D9DC-4956-B805-940A7B563583.png",
+          "width": 285,
+          "height": 400,
+          "isVideo": false
+        },
+        {
+          "src": "./assets/images/spazio/65A2FCE4-6174-4A28-A0F7-FEB898A4830E.png",
+          "width": 330,
+          "height": 500,
+          "isVideo": false
+        },
+        {
+          "src": "./assets/images/spazio/76694CCD-EEE1-466D-8F0F-C70A337F14CF.png",
+          "width": 310,
+          "height": 450,
+          "isVideo": false
+        },
+        {
+          "src": "./assets/images/spazio/80C90631-1C61-4545-9874-27CAD9A036F7.png",
+          "width": 295,
+          "height": 400,
+          "isVideo": false
+        }
+      ]
+    },
+    {
+      "title": "Clazzy",
+      "text": "Clazzy",
+      "main": "./assets/images/clazzy/1H5A0790.png",
+      "grid": [
+        {
+          "src": "https://drive.google.com/uc?export=view&id=1lKNOlsQIkbl1uopvn5WrickJZ2N0MpIq",
+          "srcMP4": "https://drive.google.com/uc?export=view&id=1IAdxOhYqJlVtInhomEh7a8nGBumNv4Ku",
+          "width": 260,
+          "height": 500,
+          "isVideo": true
+        },
+        {
+          "src": "./assets/images/clazzy/yulianadementyeva_299964726_5321822414561299_2556886244961376795_n.png",
+          "width": 360,
+          "height": 500,
+          "isVideo": false
+        },
+        {
+          "src": "https://drive.google.com/uc?export=view&id=13ctYbUrcv42yQ6TCSvVkCprpSNRhp1yC",
+          "srcMP4": "https://drive.google.com/uc?export=view&id=1CN1welC4CXmFuRfqThJtEzHVRken7Lv-",
+          "width": 300,
+          "height": 500,
+          "isVideo": true
+        },
+        {
+          "src": "./assets/images/clazzy/1H5A2031_720x.png",
+          "width": 300,
+          "height": 500,
+          "isVideo": false
+        },
+        {
+          "src": "https://drive.google.com/uc?export=view&id=1cJdc9lrUkEgeNCkzJmBfWjaqRVU7PjJ-",
+          "srcMP4": "https://drive.google.com/uc?export=view&id=1Wq6Yclk0VAsG0MSmdWKVJcpw46IFtSHl",
+          "width": 320,
+          "height": 500,
+          "isVideo": true
+        },
+        {
+          "src": "./assets/images/clazzy/clazzy 4.png",
+          "width": 300,
+          "height": 500,
+          "isVideo": false
+        },
+        {
+          "src": "./assets/images/clazzy/clazzy.ua_314693583_863000251808796_1882555096092428058_n.png",
+          "width": 620,
+          "height": 500,
+          "isVideo": false
+        }
+      ]
+    },
+    {
+      "title": "Cendre",
+      "text": "CENDRÉ",
+      "main": "./assets/images/cendre/yulianadementyeva_335764658_3479217002390563_5819668988762752706_n%20(1).png",
+      "grid": [
+        {
+          "src": "./assets/images/cendre/324544674_1145290746153815_6215838574588772617_n%20(1).png",
+          "width": 620,
+          "height": 550,
+          "isVideo": false
+        },
+        {
+          "src": "./assets/images/cendre/yulianadementyeva_323823959_489771816416563_2467756222928474016_n (1).png",
+          "width": 640,
+          "height": 550,
+          "isVideo": false
+        },
+        {
+          "src": "./assets/images/cendre/yulianadementyeva_323956882_164806726286882_7772321281935236659_n%20(3).png",
+          "width": 414,
+          "height": 500,
+          "isVideo": false
+        },
+        {
+          "src": "https://drive.google.com/uc?export=view&id=19HxZQ2S9db0Sh_2lmuaMr-CT1lbSKzj3",
+          "srcMP4": "https://drive.google.com/uc?export=view&id=13dcK1wq7YnBL_BqIS3W6yhYSDH3iBX5P",
+          "width": 413,
+          "height": 500,
+          "isVideo": true
+        },
+        {
+          "src": "./assets/images/cendre/Untitleddesign_9_3000x.png",
+          "width": 413,
+          "height": 500,
+          "isVideo": false
+        },
+        {
+          "src": "https://drive.google.com/uc?export=view&id=1pqChb2tyfnJKDwWjzPTtpHMcHuYyIblt",
+          "srcMP4": "https://drive.google.com/uc?export=view&id=12MXHq_peN2D-NpCRqNMuFPKYSDy8p9uJ",
+          "width": 414,
+          "height": 500,
+          "isVideo": true
+        },
+        {
+          "src": "./assets/images/cendre/yulianadementyeva_307798076_195459932922393_2701760104420263133_n%20(1).png",
+          "width": 413,
+          "height": 500,
+          "isVideo": false
+        },
+        {
+          "src": "./assets/images/cendre/yulianadementyeva_307582770_3239534856259545_8900779988144409706_n%20(1).png",
+          "width": 413,
+          "height": 500,
+          "isVideo": false
+        }
+      ]
+    },
+    {
+      "title": "Byzoom",
+      "text": "Byzoom",
+      "main": "./assets/images/byzoom/byzoomfitness_352328006_667532172078288_7223880799643781101_n%20(1).png",
+      "grid": [
+        {
+          "src": "./assets/images/byzoom/byzoomfitness_351405749_3400448366934151_4950509068201414822_n%20(1).png",
+          "width": 500,
+          "height": 550,
+          "isVideo": false
+        },
+        {
+          "src": "https://drive.google.com/uc?export=view&id=18xCu4lr4ODmNfgUIWl1XGqimRWajnVl_",
+          "srcMP4": "https://drive.google.com/uc?export=view&id=1I26NeAl7fu9ZW8e3oT1HE5bcewxy-FsU",
+          "width": 345,
+          "height": 550,
+          "isVideo": true
+        },
+        {
+          "src": "./assets/images/byzoom/byzoomfitness_354494250_1262864987670852_8837927189416854096_n%20(1).png",
+          "width": 395,
+          "height": 550,
+          "isVideo": false
+        }
+      ]
+    },
+    {
+      "title": "The Icon",
+      "text": "THE ICON",
+      "main": "./assets/images/theicon/F5475AE4-C993-484F-8F98-B4EFCAF23AB6.png",
+      "grid": [
+        {
+          "src": "./assets/images/theicon/artem.plutalov_253513319_124273520017807_8770654884102307148_n.png",
+          "width": 400,
+          "height": 500,
+          "isVideo": false
+        },
+        {
+          "src": "./assets/images/theicon/FB53AB9F-6AE5-4714-95FC-8AF52D9145E6.png",
+          "width": 440,
+          "height": 600,
+          "isVideo": false
+        },
+        {
+          "src": "./assets/images/theicon/artem.plutalov_242995129_661805914783807_7078513617724235795_n.png",
+          "width": 400,
+          "height": 500,
+          "isVideo": false
+        },
+        {
+          "src": "./assets/images/theicon/yulianadementyeva_243195134_1029349654520367_2954343692059331144_n.png",
+          "width": 400,
+          "height": 500,
+          "isVideo": false
+        }
+      ]
+    }
   ]
 }
