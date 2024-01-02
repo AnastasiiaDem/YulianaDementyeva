@@ -1,28 +1,31 @@
-<div class="back" (click)="back()">
-  <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-    <path
-      d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"
-      fill="rgb(0 0 0 / 50%)"></path>
-  </svg>
-</div>
-<video *ngIf="title == 'Byzoom'" autoplay loop playsinline playsInLine class="byzoom skeleton">
-  <source src="https://drive.google.com/uc?export=view&id=1fuqL2ii-2rGU8FBC-rKxK0bnSNfZz0xf" type="video/webm">
-  <source src="https://drive.google.com/uc?export=view&id=1bZfRA-f5tZhV_HREMHaoiIwD4aG7GD0V" type="video/mp4">
-</video>
-<div class="block1">
-  <div class="title-block">
-    <p class="title">{{displayData.text}}</p>
+<div style="overflow: hidden;">
+  <div class="back" (click)="back()">
+    <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path
+        d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"
+        fill="rgb(0 0 0 / 50%)"></path>
+    </svg>
   </div>
-  <img [src]="displayData.main" alt="" class="skeleton">
-</div>
-<div class="block2">
-  <ng-container *ngFor="let item of grid">
-    <img *ngIf="!item.isVideo" [src]="item.src" alt="" [width]="item.width" [height]="item.height" class="skeleton">
-    <video *ngIf="item.isVideo" autoplay loop playsinline playsInLine [width]="item.width" [height]="item.height" class="skeleton">
-      <source [src]="item.src" type="video/webm">
-      <source [src]="item.srcMP4" type="video/mp4">
-    </video>
-  </ng-container>
+  <video *ngIf="title == 'Byzoom'" autoplay loop playsinline playsInLine class="byzoom skeleton">
+    <source src="https://drive.google.com/uc?export=view&id=1fuqL2ii-2rGU8FBC-rKxK0bnSNfZz0xf" type="video/webm">
+    <source src="https://drive.google.com/uc?export=view&id=1bZfRA-f5tZhV_HREMHaoiIwD4aG7GD0V" type="video/mp4">
+  </video>
+  <div class="block1">
+    <div class="title-block">
+      <p class="title">{{ displayData.text }}</p>
+    </div>
+    <img [src]="displayData.main" alt="" class="skeleton">
+  </div>
+  <div class="block2">
+    <ng-container *ngFor="let item of grid">
+      <img *ngIf="!item.isVideo" [src]="item.src" alt="" [width]="item.width" [height]="item.height" class="skeleton">
+      <video *ngIf="item.isVideo" autoplay loop playsinline playsInLine [width]="item.width" [height]="item.height"
+             class="skeleton">
+        <source [src]="item.src" type="video/webm">
+        <source [src]="item.srcMP4" type="video/mp4">
+      </video>
+    </ng-container>
+  </div>
 </div>
 
 <ngx-spinner bdColor="rgb(255,255,255)" size="default" color="rgba(0,0,0,0.5)" type="ball-fussion"></ngx-spinner>

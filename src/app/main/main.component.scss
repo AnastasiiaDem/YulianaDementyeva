@@ -82,13 +82,13 @@
   object-fit: cover;
   filter: brightness(0.8);
   -webkit-filter: brightness(0.8);
+  overflow: hidden;
 }
 
 .nav {
   display: flex;
   writing-mode: vertical-rl;
   transform: rotateZ(180deg) translate(-20px, 390px);
-  -webkit-transform: rotateZ(180deg) translate(-20px, 390px);
   position: absolute;
   z-index: 1;
 
@@ -110,7 +110,6 @@
 .contact {
   writing-mode: vertical-rl;
   transform: translate(-20px, -205px);
-  -webkit-transform: translate(-20px, -205px);
   position: absolute;
   right: 0;
   display: flex;
@@ -127,7 +126,6 @@
   height: 250px;
   position: absolute;
   transform: translateY(-285px);
-  -webkit-transform: translateY(-285px);
 }
 
 .name {
@@ -137,7 +135,7 @@
   font-size: 20px;
   font-weight: 900;
   width: 174px;
-  top: 20px;
+  top: 30px;
   left: 20px;
   z-index: 2;
   position: absolute;
@@ -154,7 +152,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
   z-index: 5;
   transition: 2s ease-in-out;
 }
@@ -228,7 +225,6 @@
     &:hover {
       .book-image {
         transform: scale(1.2);
-        -webkit-transform: scale(1.2);
       }
 
       .description {
@@ -314,13 +310,11 @@ button {
 
 .prev {
   transform: rotate(90deg) translate(-50%, 0);
-  -webkit-transform: rotate(90deg) translate(-50%, 0);
   left: 10px;
 }
 
 .next {
   transform: rotate(-90deg) translate(50%, 0);
-  -webkit-transform: rotate(-90deg) translate(50%, 0);
   right: 10px;
 }
 
@@ -422,7 +416,6 @@ svg {
   cursor: pointer;
   height: max-content;
   transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
   transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 

@@ -3,6 +3,11 @@ import detailData from '../details-data.json';
 import {Router} from '@angular/router';
 import {NgxSpinnerService} from 'ngx-spinner';
 import {Location} from '@angular/common';
+import Lenis from '@studio-freight/lenis';
+
+const lenis = new Lenis({
+  duration: 5,
+});
 
 @Component({
   selector: 'app-details',
@@ -25,7 +30,13 @@ export class DetailsComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-    window.scrollTo(0, 0);
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+    lenis.scrollTo('#top');
     this.spinner.show();
   }
 

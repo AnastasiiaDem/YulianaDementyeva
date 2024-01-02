@@ -3,6 +3,11 @@ import {Router} from '@angular/router';
 import runwayData from '../runway-data.json';
 import bookData from '../book-data.json';
 import {NgxSpinnerService} from 'ngx-spinner';
+import Lenis from '@studio-freight/lenis';
+
+const lenis = new Lenis({
+  duration: 5,
+});
 
 @Component({
   selector: 'app-main',
@@ -35,11 +40,7 @@ export class MainComponent implements OnInit, AfterViewInit {
   onWindowScroll() {
     let navbar = (document.querySelector('#navbar') as HTMLElement)?.clientHeight;
     let parameters = (document.querySelector('#parameters') as HTMLElement)?.clientHeight;
-    let parameters2 = (document.querySelector('#parameters2') as HTMLElement)?.clientHeight;
     let book = (document.querySelector('#book') as HTMLElement)?.clientHeight;
-    let runway = (document.querySelector('#runway') as HTMLElement)?.clientHeight;
-    let polaroid = (document.querySelector('#polaroid') as HTMLElement)?.clientHeight;
-    let video = (document.querySelector('#video') as HTMLElement)?.clientHeight;
     let contact = (document.querySelector('#contact') as HTMLElement)?.clientHeight;
 
     let B = document.body,
@@ -51,24 +52,23 @@ export class MainComponent implements OnInit, AfterViewInit {
     this.showName = window.pageYOffset < navbar + parameters || window.pageYOffset > height - contact;
 
     this.showUp = window.pageYOffset > navbar + parameters + book - 400;
-    // this.showName = window.pageYOffset < parameters + window.innerWidth - 430 || window.pageYOffset > parameters2 + book + runway + polaroid + video + 550;
   }
 
   constructor(private router: Router,
               private spinner: NgxSpinnerService) {
-    // setTimeout(() => {
-    //   this.transition = true;
-    //   this.body = document.querySelector('body') as HTMLElement;
-    //   this.body.style.overflow = 'hidden';
     this.runwayItems = runwayData.data2;
     this.allBookItems = bookData.data2;
     this.bookItems = this.allBookItems.slice(0, this.showNum);
-    //   this.showSpinner = false;
-    // }, 1000);
   }
 
-  ngOnInit(): void {
-    // window.scrollTo(0, 0);
+  ngOnInit() {
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
     this.spinner.show();
     this.slider = document.getElementsByClassName('slider-width')[0];
 
@@ -83,29 +83,6 @@ export class MainComponent implements OnInit, AfterViewInit {
       this.plus = true;
       this.minus = true;
     }
-    // setTimeout(() => {
-    //   this.body.style.overflow = 'auto';
-    // }, 3000);
-
-    // if (screen.width > 990) {
-    //   this.itemDisplay = 4;
-    //   this.margin = this.itemDisplay * 5;
-    // }
-    // if (screen.width > 700 && screen.width < 990) {
-    //   this.itemDisplay = 3;
-    //   this.margin = this.itemDisplay * 6.8;
-    // }
-    // if (screen.width > 280 && screen.width < 700) {
-    //   this.itemDisplay = 1;
-    //   this.margin = 10;
-    // }
-
-    // this.itemleft = this.items.length % 4;
-    // this.itemslide = Math.floor(this.items.length / 4) - 1;
-
-    // for (let i = 0; i < this.items.length; i++) {
-    //   (this.items[i] as HTMLElement).style.width = (screen.width / 4) - this.margin + 'px';
-    // }
   }
 
   ngAfterViewInit() {
@@ -145,14 +122,6 @@ export class MainComponent implements OnInit, AfterViewInit {
   loadMore() {
     this.more += 14;
     this.bookItems = this.allBookItems.slice(0, this.showNum + this.more);
-    // setTimeout(() => {
-    //   this.images = document.querySelectorAll('.book-image');
-    //   this.images.forEach((e: any) => {
-    //     if (e.getAttribute('src') == '') {
-    //       e.parentElement.style.height = 0;
-    //     }
-    //   });
-    // }, 0);
   }
 
   showLess() {
@@ -181,7 +150,7 @@ export class MainComponent implements OnInit, AfterViewInit {
     this.router.navigateByUrl('/details', {state: {title}});
   }
 
-  up() {
-    window.scrollTo(0, 0);
+  scrollTo(dest: string) {
+    lenis.scrollTo(dest);
   }
 }
