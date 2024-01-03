@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, HostListener, OnInit} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild} from '@angular/core';
 import {Router} from '@angular/router';
 import runwayData from '../runway-data.json';
 import bookData from '../book-data.json';
@@ -15,22 +15,27 @@ const lenis = new Lenis({
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit, AfterViewInit {
+
+  @ViewChild('plane1') plane1!: ElementRef;
+  @ViewChild('plane2') plane2!: ElementRef;
+  @ViewChild('plane3') plane3!: ElementRef;
+
+  private requestAnimationFrameId: number = 0;
+  private xForce = 0;
+  private yForce = 0;
+  private readonly easing = 0.05;
+  private readonly speed = 5;
+
   showName = true;
   showUp = false;
   bookItems: any = [];
   runwayItems: any;
   count = 0;
   inc = 0;
-  margin = 0;
-  itemDisplay = 0;
   slider: any;
   allBookItems: any = [];
   more = 0;
-  showSpinner = true;
-  transition = false;
-  body: any;
   line = 1;
-  images: any;
   showNum = 15;
   step = 0;
   plus = false;
@@ -55,7 +60,8 @@ export class MainComponent implements OnInit, AfterViewInit {
   }
 
   constructor(private router: Router,
-              private spinner: NgxSpinnerService) {
+              private spinner: NgxSpinnerService,
+              private renderer: Renderer2) {
     this.runwayItems = runwayData.data2;
     this.allBookItems = bookData.data2;
     this.bookItems = this.allBookItems.slice(0, this.showNum);
@@ -89,6 +95,39 @@ export class MainComponent implements OnInit, AfterViewInit {
     setTimeout(() => {
       this.spinner.hide();
     }, 4000);
+  }
+
+  manageMouseMove(e: MouseEvent): void {
+    const { movementX, movementY } = e;
+    this.xForce += movementX * this.speed;
+    this.yForce += movementY * this.speed;
+
+    if (this.requestAnimationFrameId === 0) {
+      this.requestAnimationFrameId = requestAnimationFrame(() => this.animate());
+    }
+  }
+
+  lerp(start: number, target: number, amount: number): number {
+    return start * (1 - amount) + target * amount;
+  }
+
+  animate(): void {
+    this.xForce = this.lerp(this.xForce, 0, this.easing);
+    this.yForce = this.lerp(this.yForce, 0, this.easing);
+
+    this.renderer.setStyle(this.plane1.nativeElement, 'transform', `translate(${this.xForce}px, ${this.yForce}px)`);
+    this.renderer.setStyle(this.plane2.nativeElement, 'transform', `translate(${this.xForce * 0.5}px, ${this.yForce * 0.5}px)`);
+    this.renderer.setStyle(this.plane3.nativeElement, 'transform', `translate(${this.xForce * 0.25}px, ${this.yForce * 0.25}px)`);
+
+    if (Math.abs(this.xForce) < 0.01) this.xForce = 0;
+    if (Math.abs(this.yForce) < 0.01) this.yForce = 0;
+
+    if (this.xForce !== 0 || this.yForce !== 0) {
+      this.requestAnimationFrameId = requestAnimationFrame(() => this.animate());
+    } else {
+      cancelAnimationFrame(this.requestAnimationFrameId);
+      this.requestAnimationFrameId = 0;
+    }
   }
 
   next() {

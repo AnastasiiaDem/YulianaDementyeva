@@ -14,7 +14,7 @@
 }
 
 #runway {
-  height: 600px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -328,39 +328,6 @@ button {
   margin: 0 auto;
 }
 
-.download {
-  color: #000;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 300;
-  text-transform: lowercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-
-  img {
-    width: 15px;
-    height: 15px;
-    margin-left: 5px;
-  }
-}
-
-.polaroid {
-  display: flex;
-  gap: 10px;
-  align-items: flex-end;
-  justify-content: center;
-  margin-top: 30px;
-
-  .block {
-    display: flex;
-    flex-direction: column;
-    flex: auto;
-    overflow: hidden;
-  }
-}
-
 .ma-link {
   text-align: center;
   color: rgba(0, 0, 0, 0.50);
@@ -417,6 +384,121 @@ svg {
   height: max-content;
   transform: rotate(90deg);
   transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.polaroid {
+  height: 120vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  background: #000;
+
+  .title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    z-index: 100;
+
+    h1 {
+      font-weight: 800;
+      color: white;
+      margin: 0;
+      text-align: center;
+      font-family: Inter, sans-serif;
+    }
+
+    .download {
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 300;
+      text-transform: lowercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      color: #808080;
+      margin: 0;
+      text-align: center;
+      margin-top: 10px;
+
+      img {
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .plane {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    img {
+      position: absolute;
+      object-fit: cover;
+    }
+
+    &:nth-of-type(2) {
+      filter: brightness(0.9);
+
+      img {
+        &:nth-of-type(1) {
+          left: 87%;
+          top: 70%;
+        }
+
+        &:nth-of-type(2) {
+          left: 5%;
+          top: 65%;
+        }
+
+        &:nth-of-type(3) {
+          left: 35%;
+          top: 0%;
+        }
+      }
+    }
+
+    &:nth-of-type(3) {
+      filter: brightness(0.7);
+
+      img {
+        &:nth-of-type(1) {
+          left: 5%;
+          top: 10%;
+        }
+
+        &:nth-of-type(2) {
+          left: 80%;
+          top: 5%;
+        }
+
+        &:nth-of-type(3) {
+          left: 60%;
+          top: 55%;
+        }
+      }
+    }
+
+    &:nth-of-type(4) {
+      filter: brightness(0.4);
+
+      img {
+        &:nth-of-type(1) {
+          left: 65%;
+          top: 2.5%;
+        }
+
+        &:nth-of-type(2) {
+          left: 40%;
+          top: 75%;
+        }
+      }
+    }
+  }
 }
 
 //320px—480px: Mobile devices

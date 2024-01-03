@@ -80,58 +80,65 @@
            alt="expand-arrow--v2">
     </button>
   </div>
+
   <div id="polaroid">
-    <h1 class="name" style="margin: 0 auto 40px;position: unset;">YULIANA DEMENTYEVA</h1>
-    <a class="download" href="./assets/Yuliana%20Dementyeva%20Polaroid.pdf" target="_blank">
-      download <img src="https://img.icons8.com/ios/50/installing-updates--v1.png" alt="installing-updates--v1">
-    </a>
-    <div class="polaroid">
-      <div class="block" style="width: 28%;">
-        <img src="./assets/images/polaroid_1.png" alt="" class="skeleton">
-        <img src="./assets/images/polaroid_2.png" alt="" class="skeleton" style="margin-top: 10px;">
+    <div (mousemove)="manageMouseMove($event)" class="polaroid">
+      <div class='title'>
+        <h1>YULIANA DEMENTYEVA <br> POLAROIDS</h1>
+        <p>
+          <a class="download" href="./assets/Yuliana%20Dementyeva%20Polaroid.pdf" target="_blank">
+            download
+            <img src="https://img.icons8.com/fluency-systems-regular/48/808080/download--v1.png" alt="download--v1"/>          </a>
+        </p>
       </div>
-      <div class="block" style="width: 33%;">
-        <img src="./assets/images/polaroid_3.png" alt="" class="skeleton">
-        <img src="./assets/images/polaroid_4.png" alt="" class="skeleton" style="margin-top: 10px;">
+      <div #plane1 class="plane">
+        <img src="./assets/images/polaroid_1.jpg" alt="image" [style.width]="'300px'"/>
+        <img src="./assets/images/polaroid_2.png" alt="image" [style.width]="'300px'"/>
+        <img src="./assets/images/polaroid_3.png" alt="image" [style.width]="'225px'"/>
       </div>
-      <div class="block" style="width: 28%;">
-        <img src="./assets/images/polaroid_5.png" alt="" class="skeleton">
-        <img src="./assets/images/polaroid_6.png" alt="" class="skeleton" style="margin-top: 10px;">
+      <div #plane2 class="plane">
+        <img src="./assets/images/polaroid_4.png" alt="image" [style.width]="'230px'"/>
+        <img src="./assets/images/polaroid_5.png" alt="image" [style.width]="'230px'"/>
+        <img src="./assets/images/polaroid_6.png" alt="image" [style.width]="'210px'"/>
+      </div>
+      <div #plane3 class="plane">
+        <img src="./assets/images/polaroid_7.png" alt="image" [style.width]="'150px'"/>
+        <img src="./assets/images/polaroid_8.jpg" alt="image" [style.width]="'200px'"/>
       </div>
     </div>
   </div>
 
-  <!--<div id="video">-->
-  <!--  <video loop muted playsinline playsInLine controls class="skeleton item1">-->
-  <!--    <source src="https://drive.google.com/uc?export=view&id=1QC_AN9rRLTKPobe4DPvVBTLPpVZ7EATS" type="video/webm">-->
-  <!--    <source src="https://drive.google.com/uc?export=view&id=11Qw04Z6Z2_l3IgkGAW57g5no0wfNQWbX" type="video/mp4">-->
-  <!--  </video>-->
-  <!--  <img src="https://drive.google.com/uc?export=view&id=1c1wwmP6jSxwZTybRJ4H_-ZT0VQwLK54X" alt="" class="skeleton item2">-->
-  <!--  <video loop muted playsinline playsInLine controls class="item3">-->
-  <!--    <source src="https://drive.google.com/uc?export=view&id=1qXEF6uOqNiKqM-q5WNzD4zc-jkl7Rcly" type="video/webm">-->
-  <!--    <source src="https://drive.google.com/uc?export=view&id=1SO7YP4Lm-RA7oxGv2JXm41q0khGOnsWA" type="video/mp4">-->
-  <!--  </video>-->
-  <!--  <video loop muted playsinline playsInLine controls class="item4">-->
-  <!--    <source src="https://drive.google.com/uc?export=view&id=1klfh19nxDsqHZkzBZSsGb0lGUdk28Im1" type="video/webm">-->
-  <!--    <source src="https://drive.google.com/uc?export=view&id=15OJhWA8FVsTiUJ7i_l-niamwhh-qWAgS" type="video/mp4">-->
-  <!--  </video>-->
-  <!--  <video loop muted playsinline playsInLine controls class="item5">-->
-  <!--    <source src="https://drive.google.com/uc?export=view&id=1a-t-TqiB_nHc3eqpRO4lxXPd0Mg5iT0p" type="video/webm">-->
-  <!--    <source src="https://drive.google.com/uc?export=view&id=18jRTuI8o5n-YxurSjUhsQZ7jnvpwCPfm" type="video/mp4">-->
-  <!--  </video>-->
-  <!--  <img src="https://drive.google.com/uc?export=view&id=1TPeBN8v3rHi_xaNMls6ODYdYSDtjX2tO" alt="" class="skeleton item6">-->
-  <!--</div>-->
+  <div id="video">
+    <video loop muted playsinline playsInLine controls class="skeleton item1">
+      <source src="https://drive.google.com/uc?export=view&id=1QC_AN9rRLTKPobe4DPvVBTLPpVZ7EATS" type="video/webm">
+      <source src="https://drive.google.com/uc?export=view&id=11Qw04Z6Z2_l3IgkGAW57g5no0wfNQWbX" type="video/mp4">
+    </video>
+    <img src="./assets/images/yulianadementyeva_1643977677_2766207712503328577_5602437.jpg" alt="" class="skeleton item2">
+    <video loop muted playsinline playsInLine controls class="item3">
+      <source src="https://drive.google.com/uc?export=view&id=1qXEF6uOqNiKqM-q5WNzD4zc-jkl7Rcly" type="video/webm">
+      <source src="https://drive.google.com/uc?export=view&id=1SO7YP4Lm-RA7oxGv2JXm41q0khGOnsWA" type="video/mp4">
+    </video>
+    <video loop muted playsinline playsInLine controls class="item4">
+      <source src="https://drive.google.com/uc?export=view&id=1klfh19nxDsqHZkzBZSsGb0lGUdk28Im1" type="video/webm">
+      <source src="https://drive.google.com/uc?export=view&id=15OJhWA8FVsTiUJ7i_l-niamwhh-qWAgS" type="video/mp4">
+    </video>
+    <video loop muted playsinline playsInLine controls class="item5">
+      <source src="https://drive.google.com/uc?export=view&id=1a-t-TqiB_nHc3eqpRO4lxXPd0Mg5iT0p" type="video/webm">
+      <source src="https://drive.google.com/uc?export=view&id=18jRTuI8o5n-YxurSjUhsQZ7jnvpwCPfm" type="video/mp4">
+    </video>
+    <img src="./assets/images/yulianadementyeva_1631291840_2659791195470233103_5602437.jpg" alt="" class="skeleton item6">
+  </div>
 
-  <!--<div id="video">-->
-  <!--  <video autoplay loop muted playsinline playsInLine controls>-->
-  <!--    <source src="https://drive.google.com/uc?export=view&id=1QC_AN9rRLTKPobe4DPvVBTLPpVZ7EATS" type="video/webm">-->
-  <!--    <source src="https://drive.google.com/uc?export=view&id=11Qw04Z6Z2_l3IgkGAW57g5no0wfNQWbX" type="video/mp4">-->
-  <!--  </video>-->
-  <!--  <video autoplay loop muted playsinline playsInLine controls>-->
-  <!--    <source src="https://drive.google.com/uc?export=view&id=1klfh19nxDsqHZkzBZSsGb0lGUdk28Im1" type="video/webm">-->
-  <!--    <source src="https://drive.google.com/uc?export=view&id=15OJhWA8FVsTiUJ7i_l-niamwhh-qWAgS" type="video/mp4">-->
-  <!--  </video>-->
-  <!--</div>-->
+<!--  <div id="video">-->
+<!--    <video autoplay loop muted playsinline playsInLine controls>-->
+<!--      <source src="https://drive.google.com/uc?export=view&id=1QC_AN9rRLTKPobe4DPvVBTLPpVZ7EATS" type="video/webm">-->
+<!--      <source src="https://drive.google.com/uc?export=view&id=11Qw04Z6Z2_l3IgkGAW57g5no0wfNQWbX" type="video/mp4">-->
+<!--    </video>-->
+<!--    <video autoplay loop muted playsinline playsInLine controls>-->
+<!--      <source src="https://drive.google.com/uc?export=view&id=1klfh19nxDsqHZkzBZSsGb0lGUdk28Im1" type="video/webm">-->
+<!--      <source src="https://drive.google.com/uc?export=view&id=15OJhWA8FVsTiUJ7i_l-niamwhh-qWAgS" type="video/mp4">-->
+<!--    </video>-->
+<!--  </div>-->
 
   <div class="container" id="parameters2">
     <img class="skeleton cover-img" style="object-position: 85% 0;"
