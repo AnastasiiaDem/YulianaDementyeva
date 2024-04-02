@@ -1,27 +1,27 @@
-# Yuliana
+### <span style="font-size: larger;">Yuliana Dementyeva Portfolio</span>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+#### Overview:
+The Yuliana Dementyeva Portfolio project is a captivating digital platform showcasing the model's exceptional work, career achievements, and vibrant personality. It takes visitors on an inspiring journey through her innovative projects and insightful collaborations, aiming to elevate her global recognition in the fashion industry.
 
-## Development server
+#### Project Goal:
+The goal of this project is to create a visually appealing and user-friendly portfolio site displaying Yuliana Dementyeva's photo shoots, runway shows, brand collaborations, and other notable achievements. It aims to provide easy access to her work and social media channels, inviting visitors to join her journey.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+#### Features:
+- Animations: custom animation on mouse move with depth effects, parallax, hover, sliders and others, enhancing user engagement and interactivity.
+- Gallery: A carefully designed gallery containing Yuliana Dementyeva's most iconic photo shoots and runway shows.
+- Balancing Aesthetics and Functionality: Accommodating a large number of photos and videos while maintaining a balance between aesthetics and functionality for a clear perception.
 
-## Code scaffolding
+#### Technologies Used:
+- Angular
+- TypeScript
+- SCSS
+- Bootstrap
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### How to Access:
+Visit [yulianadementyeva.vercel.app](https://yulianadementyeva.vercel.app) to explore the captivating digital platform and learn more about Yuliana Dementyeva's global recognition in the fashion industry.
 
-## Build
+#### Experience:
+Developing a portfolio website for a Ukrainian supermodel was an incredibly rewarding experience. It provided an opportunity to not only apply technical skills but also contribute to the promotion of a talented personality in the fashion world. The site successfully showcased her outstanding career, engaging personality, and unique style, further establishing her status as a leading figure in the industry.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### How to Access:
+Visit [yulianadementyeva.vercel.app](https://yulianadementyeva.vercel.app) to explore the captivating digital platform showcasing the model's exceptional work and vibrant personality.
