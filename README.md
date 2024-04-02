@@ -17,9 +17,6 @@ The goal of this project is to create a visually appealing and user-friendly por
 - SCSS
 - Bootstrap
 
-#### How to Access:
-Visit [yulianadementyeva.vercel.app](https://yulianadementyeva.vercel.app) to explore the captivating digital platform and learn more about Yuliana Dementyeva's global recognition in the fashion industry.
-
 #### Experience:
 Developing a portfolio website for a Ukrainian supermodel was an incredibly rewarding experience. It provided an opportunity to not only apply technical skills but also contribute to the promotion of a talented personality in the fashion world. The site successfully showcased her outstanding career, engaging personality, and unique style, further establishing her status as a leading figure in the industry.
 
